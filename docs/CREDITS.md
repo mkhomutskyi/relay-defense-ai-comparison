@@ -13,4 +13,4 @@ Original publishers and model identities are preserved:
 
 This repository distributes game artifacts and comparison infrastructure, not model weights. Model-provider terms do not replace third-party software/asset licenses. Source attribution does not imply provider endorsement.
 
-Screenshots and gameplay recordings are genuine observations. SVG article illustrations are editorial illustrations, not hardware photos, gameplay screenshots or benchmark measurements. Preserve captions and provenance when reusing them.
+Screenshots and gameplay recordings are genuine observations. The cover is an AI-assisted hardware sketch generated locally on the AMD machine with ComfyUI and installed Z-Image Turbo weights. The workflow diagram is an editorial SVG illustration. These are illustrations, not hardware photos, gameplay screenshots or benchmark measurements. Preserve captions and provenance when reusing them.

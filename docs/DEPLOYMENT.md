@@ -2,7 +2,7 @@
 
 ## Static games
 
-The `site/` folder can be hosted by GitHub Pages. Enable Pages with GitHub Actions only after the public release candidate is accepted. The workflow is manual-only; pushing does not publish automatically. It deploys the prepared static files and performs no new game generation. Verify the repository-prefixed URLs, asset requests and fullscreen/input on the final origin.
+The `site/` folder can be hosted by GitHub Pages. The owner requested public access. Pages publication uses the manual GitHub Actions workflow. The workflow is manual-only; pushing does not publish automatically. It deploys the prepared static files and performs no new game generation. Verify the repository-prefixed URLs, asset requests and fullscreen/input on the final origin.
 
 ## Rating API
 
@@ -14,7 +14,7 @@ Test invalid stars, unknown games, missing/hostile origins, vote update instead 
 
 ## Frozen results
 
-Do not fix game behavior while packaging. Record any asset-path-only changes and compare against source hashes. The native Vulkan game is knowingly incomplete. Source-map/asset privacy checks and license review apply to the exact final bundle. Keep model weights and private experiment archives outside this repository.
+Do not fix game behavior while packaging. Record any asset-path-only changes and compare against source hashes. The native Vulkan prototype is playable, with a missing map and known defects. Its recorded TypeScript error remains disclosed. Source-map/asset privacy checks and license review apply to the exact final bundle. Keep model weights and private experiment archives outside this repository.
 
 ## Scope
 

@@ -17,7 +17,7 @@
   "qwen-native": {
     "typecheckExitCode": 1,
     "staticBundleExitCode": 0,
-    "note": "Historical unused bakeBackground method; Vite emission preserves the incomplete artifact without a game fix"
+    "note": "Playable prototype with missing map and known defects; historical unused bakeBackground TypeScript error remains. Vite emission packages the original game without a behavior fix."
   },
   "qwen-strata": {
     "typecheckExitCode": 0,

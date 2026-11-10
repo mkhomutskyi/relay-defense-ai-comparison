@@ -2,7 +2,7 @@
 
 Six saved browser tower-defense games, generated through different model/runtime/agent workflows. This repository contains their source, static browser bundles and comparison page. Playing requires no language model, API key or home-server access.
 
-**Preparation status:** private review candidate. Public GitHub Pages and production reader voting are not enabled. The star interface works locally; the shared rating service requires deployment/configuration. These are different games with different development histories, not a controlled model leaderboard.
+**Release status:** the owner requested public access; the repository and static play page are being published. Production reader voting is not enabled. The star interface works locally; the shared rating service requires deployment/configuration. These are different games with different development histories, not a controlled model leaderboard.
 
 ![Actual DeepSeek and Graphify game during boss combat](site/media/deepseek-graphify.png)
 
@@ -18,7 +18,7 @@ The GIF is a continuous real-time combat excerpt. The comparison page also inclu
 |2|DeepSeek Flash API + Pi|21m43s, including a later fix|$0.1446|
 |3|Qwen3.8-Flash-Next IQ2_XS + Strata HIP/MTP + Pi|1h58m23s|No local inference API fee|
 |4|GLM-5.3-Flash + Strata Q2/Q3 Experts + Pi|5h53m22s|No local inference API fee|
-|5|Qwen3.8-Flash-Next IQ2_XS + LM Studio Vulkan + Pi|1h40m19s; unfinished|No local inference API fee|
+|5|Qwen3.8-Flash-Next IQ2_XS + LM Studio Vulkan + Pi|1h40m19s; playable, map missing|No local inference API fee|
 |6|Qwen3.8-27B Q4_K_M + LM Studio Vulkan + Pi, early harness|About 8h40m wall span|No local inference API fee|
 
 API usage includes compatibility preflight; excludes outside coordination, setup, independent QA, human effort, hardware and electricity. Most times sum coding/repair phases; 27B is a broader wall span. The 27B harness had significant limitations. GLM used text-only feedback and several recoveries. No general ranking of all local models follows.
@@ -31,7 +31,7 @@ Graphify's game won the owner's review. There was one fresh hosted game per conf
 python scripts/serve.py
 ```
 
-Open `http://localhost:8080`. The committed static bundles are ready for review. Five pass TypeScript checks. The native Flash-Next source retains its recorded unused-method error; its Vite-only bundle preserves that incomplete browser artifact. The missing map has not been repaired. See [build status](results/build-status.json).
+Open `http://localhost:8080`. The committed static bundles are ready for review. Five pass TypeScript checks. The native Flash-Next source retains its recorded unused-method error; its Vite-only bundle preserves the playable prototype and its known defects. The missing map has not been repaired. See [build status](results/build-status.json).
 
 ## Source and rebuilding
 
@@ -53,6 +53,6 @@ Production requires a D1 database, the real database binding, allowed public ori
 
 Selected screenshots and clips come from actual browser execution. Silent clips/GIFs do not establish sound quality or client FPS. Owner preference is separate from public reader feedback. The comparison UI, rating service, packaging and article graphics are coordinator-authored infrastructure, not model-generated game output.
 
-The machine was a refurbished MINISFORUM AI X1 Pro, Ryzen AI 9 HX 370, 64 GB RAM. Historical outlay: $1,042.63 including tax/RAM, with a reused NVMe drive. Local inference ran on that AMD machine; both DeepSeek arms used hosted inference while tools/builds/browser ran locally. The hardware/setup notes are in [minisforum-hx370-local-ai](https://github.com/mkhomutskyi/minisforum-hx370-local-ai).
+The machine was a refurbished MINISFORUM AI X1 Pro, Ryzen AI 9 HX 370, 64 GB RAM. The refurbished barebone cost $522.63 including tax. The owner was lucky to find 64 GB of used DDR5 on eBay for $500. Recorded new spending was $1,022.63; the NVMe drive was reused. This corrects the earlier $520 RAM / $1,042.63 total reported in the preparation history. Local inference ran on that AMD machine; both DeepSeek arms used hosted inference while tools/builds/browser ran locally. The hardware/setup notes are in [minisforum-hx370-local-ai](https://github.com/mkhomutskyi/minisforum-hx370-local-ai).
 
 Keep Phaser/template and dependency license notices. See [credits](docs/CREDITS.md). No weights, credentials, account records, private infrastructure configuration or raw model sessions belong in this repository.
