@@ -4,7 +4,7 @@
 
 Public play page: https://mkhomutskyi.github.io/relay-defense-ai-comparison/ . Published with the manual Pages workflow on 10 November 2026. The workflow uploads committed bundles; it does not build or generate games in the cloud.
 
-The `site/` folder can be hosted by GitHub Pages. The owner requested public access. Pages publication uses the manual GitHub Actions workflow. The workflow is manual-only; pushing does not publish automatically. It deploys the prepared static files and performs no new game generation. Verify the repository-prefixed URLs, asset requests and fullscreen/input on the final origin.
+To host a fork, enable GitHub Pages with GitHub Actions and run the manual Pages workflow. Pushing does not publish automatically. The workflow uploads the committed static files. Check repository-prefixed URLs, asset requests and fullscreen/input on the published origin.
 
 ## Rating API
 
@@ -20,4 +20,4 @@ Do not fix game behavior while packaging. Record any asset-path-only changes and
 
 ## Scope
 
-Repository preparation does not publish the Medium article. Public Pages and production rating collection are separate deployment steps. A new repaired game version needs a new result/version identifier and separate votes; do not overwrite the experiment it replaces.
+The static games work without the rating service. A changed game needs a new result/version identifier and separate votes; keep the original result identifiable.

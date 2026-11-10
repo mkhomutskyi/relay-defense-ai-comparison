@@ -1,30 +1,25 @@
-# Public hosting verification — 10 November 2026
+# Verification and limitations
 
-The repository and play page are public. Anonymous requests returned HTTP 200 for both. The manual GitHub Pages deployment completed successfully. It uploads the static bundles already built on the AMD server; it does not generate or compile games in GitHub Actions.
+Checked 10 November 2026. These checks establish public loading, media integrity and packaging behavior. They do not establish model quality, replay value, sound quality or player-device frame rate.
 
-Browser checks ran on the owner's AMD machine against the public origin. All 17 checks passed: six gallery entries, six video previews, a loaded canvas for every game, honest disconnected-voting messages for every game, mobile gallery fit, and no observed page or HTTP errors. Screenshots were retained. These checks establish public loading, not a new full-campaign test, sound-quality assessment or player-device performance benchmark.
+## Public site and media
 
-The six saved game sources, static game bundles and genuine gameplay media are unchanged from the prepared release. Native Vulkan remains a playable prototype with a missing map, overlapping UI and its recorded TypeScript unused-method error. It was not repaired for publication.
+All 36 public browser checks passed on the AMD machine: six game cards and GIF links, matching GIF downloads, all six game canvases, mobile gallery fit, and accurate unavailable-voting messages. No page or HTTP errors were observed. GitHub CI and the manual Pages deployment passed.
 
-The RAM record was corrected to a lucky $520 used eBay purchase for 64 GB. Barebone including tax: $522.63. Reused NVMe. Recorded new spending: $1,042.63. The article cover follows the owner's Intel Arc and Orange Pi hardware-sketch style. New lettering/supporting sketches were generated locally; the final cover was composed locally with the earlier accurate AI X1 Pro illustration. It is editorial artwork, not gameplay evidence.
+Each GIF is a continuous eight-second excerpt from actual browser execution. The five newer GIFs have 80 frames at 10 fps; the Graphify GIF has 96 frames at 12 fps. All clips are silent. The Graphify MP4 removes waiting between setup and combat; that cut is disclosed on the site. Its GIF is continuous combat. No game resources, outcomes or game speed were modified for the recordings. See [GIF provenance](../results/gif-provenance.json).
 
-Production shared rating collection remains unconfigured. No synthetic QA votes are presented as reader feedback. The Medium article remains a draft.
+## Builds and source integrity
 
-The earlier preparation checks below are retained with their original date and scope.
+Five sources pass TypeScript checks. Native Flash-Next retains its unused `bakeBackground` error. Its Vite-only bundle is a playable prototype with a missing map and overlapping interface; those defects are preserved.
 
----
+The 128 captured source hashes are in `results/source-hashes.json`. The published Git representation is recorded separately in `results/git-source-hashes.json`; ten files differ only by CRLF-to-LF normalization. The release check accepts either exact known representation. Game implementations and earlier media are unchanged.
 
-# Release-copy validation
+The source files, current public history, workflow logs and Pages artifacts were checked for exposed credentials and private owner/server details. None were found in the reviewed scope. Automated scans are not an exhaustive security guarantee. See [SECURITY.md](../SECURITY.md).
 
-Checked9November2026 on the owner's AMD machine. This validates packaging/review infrastructure, not a new model-quality benchmark or a fresh full campaign certification.
+## Comparison limits
 
-- All six static copies loaded under a repository-prefixed URL. The recorder blocked external network access and reported no page errors or attempted external requests in these checks.
-- Five sources passed TypeScript. Native Flash-Next retains its unused `bakeBackground` failure; Vite emitted the same playable prototype without a gameplay repair. Its missing map and other defects remain disclosed.
-- Each recording used real UI purchases and normal real-time game execution. No free resources, forced outcomes or time-hook acceleration were used. The initial Strata take was accidentally paused by the observer and is replaced by a verified active take with six actual first-wave kills. This corrects the recording, not the game.
-- Six compact silent videos and one continuous eight-second combat GIF are included. Graphify's MP4 joins setup and combat with waiting removed; the UI discloses the cut. The GIF has no temporal cut. Original recordings and capture edit records are preserved privately.
-- Local Worker/D1 checks passed vote insertion, update without duplication, optional-category handling, invalid input rejection and hostile-origin rejection. Synthetic fixture votes are excluded from any public results.
-- Final UI checks passed six video previews, playback, pausing another preview when one starts, mobile gallery fit, keyboard star navigation, retaining selection on network failure and honest messaging when the public endpoint is unconfigured. No page errors were recorded.
-- Source/build files and selected media were allowlisted. A filename-only credential/private-path scan passed after a local path was removed from a generated type-file comment; binding declarations were unchanged. Media were visually inspected. This is not a guarantee of exhaustive secret detection.
-- Original game implementations were preserved. New comparison UI, ratings, hosting configuration, generated lockfiles and editorial assets are release infrastructure, authored by the outside coordinator. They are not attributed to the game-generation models.
+Each result is one saved game with its own development history. The early 27B workflow had restrictive tool limits and tooling defects. GLM had text-only feedback and several recovery phases. Later runs used an updated Pi setup. These results support a comparison of the saved games, not a general model leaderboard.
 
-At the 9 November preparation checkpoint, public Pages and production voting were off. The current README records the later public-release status. Production voting still requires its final origin/configuration and abuse controls. The local synthetic test database is separate from production. The Medium article remains a draft.
+Creation clocks have different boundaries. API charges exclude setup, outside coordination, independent checks, human effort, hardware and electricity. The electricity estimate is an illustrative whole-box assumption, not a wall-plug measurement. Graphify's run used more in-session calls and image review, so its first-place result cannot be attributed to Graphify alone.
+
+Shared reader voting is not enabled. Local rating checks covered input validation, vote updates, optional categories, hostile origins and submission failures; synthetic test votes are not public reader feedback. The optional service needs its production configuration and abuse controls before public collection.

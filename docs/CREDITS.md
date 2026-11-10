@@ -4,7 +4,7 @@ Repository code is under the [MIT License](../LICENSE). Third-party software and
 
 The newer games started from the Phaser Studio MIT `template-vite-ts` framework. Original MIT notices are retained in each game folder. Phaser is included in the browser bundles; retain its license notices. The27B project also retains its original vendor files, including synthesized-audio dependencies and their accompanying notices.
 
-The recorded models authored game implementation and procedural assets through Pi. The outside coordinator prepared prompts, infrastructure, packaging, independent QA, the comparison page, ratings service and article graphics. This is not a claim of unattended development without external coordination.
+The recorded models authored game implementation and procedural assets through Pi. Codex prepared prompts, infrastructure, packaging, independent checks, the comparison page, ratings service and article graphics. Human review and outside coordination were part of the experiment.
 
 Original publishers and model identities are preserved:
 
@@ -15,4 +15,4 @@ Original publishers and model identities are preserved:
 
 This repository distributes game artifacts and comparison infrastructure, not model weights. Model-provider terms do not replace third-party software/asset licenses. Source attribution does not imply provider endorsement.
 
-Screenshots and gameplay recordings are genuine observations. The cover is an AI-assisted hardware illustration composed locally in ComfyUI from new locally generated Z-Image Turbo lettering/supporting sketches and the earlier accurate AI X1 Pro illustration. The workflow diagram is an editorial SVG illustration. These are illustrations, not hardware photos, gameplay screenshots or benchmark measurements. Preserve captions and provenance when reusing them.
+Screenshots and gameplay recordings are genuine observations. The cover is an AI-assisted hardware illustration composed locally in ComfyUI from locally generated Z-Image Turbo lettering/supporting sketches and an AI X1 Pro hardware illustration. The workflow diagram is an editorial SVG illustration. These are illustrations, not hardware photos, gameplay screenshots or benchmark measurements. Preserve captions and provenance when reusing them.

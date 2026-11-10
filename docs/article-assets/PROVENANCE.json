@@ -3,19 +3,19 @@
   "primaryCover": "cover-hardware-v8.png",
   "sha256": "1a167fbdad2bee02968ea5fb08093bdbe9e75774374fbe76f203e95250c6e651",
   "kind": "AI-assisted editorial hardware composite",
-  "renderMachine": "Owner AMD Ryzen AI 9 HX 370 server",
+  "renderMachine": "AMD Ryzen AI 9 HX 370 server",
   "runtime": "ComfyUI",
   "installedModelFileForNewArtwork": "z_image_turbo_bf16.safetensors",
   "sourceGenerationSeed": 2026111002,
-  "composition": "Locally generated lettering and supporting sketches combined with the earlier accurate hardware illustration in ComfyUI",
+  "composition": "Locally generated lettering and supporting sketches combined with the AI X1 Pro hardware illustration in ComfyUI",
   "size": [
     1536,
     1024
   ],
   "styleReferences": [
-    "Owner Intel Arc series",
-    "Owner Orange Pi series"
+    "Intel Arc series",
+    "Orange Pi series"
   ],
-  "hardwareReference": "Earlier accurate AI X1 Pro illustration; hardware region preserved through ComfyUI masked compositing",
-  "disclosure": "Illustration, not a hardware photo, game screenshot or performance measurement. PNG text metadata removed without changing image pixels. Previous flat cover superseded."
+  "hardwareReference": "AI X1 Pro hardware illustration preserved through ComfyUI masked compositing",
+  "disclosure": "Illustration, not a hardware photo, game screenshot or performance measurement. PNG text metadata removed without changing image pixels."
 }
