@@ -29,7 +29,9 @@
           "duration": "8.000000",
           "size": "186798"
         }
-      }
+      },
+      "encodedDurationSeconds": 8.0,
+      "encodedFrames": 80
     },
     {
       "file": "site/media/qwen-native.gif",
@@ -58,7 +60,9 @@
           "duration": "8.000000",
           "size": "340643"
         }
-      }
+      },
+      "encodedDurationSeconds": 8.0,
+      "encodedFrames": 80
     },
     {
       "file": "site/media/qwen-strata.gif",
@@ -87,7 +91,9 @@
           "duration": "8.000000",
           "size": "516209"
         }
-      }
+      },
+      "encodedDurationSeconds": 8.0,
+      "encodedFrames": 80
     },
     {
       "file": "site/media/glm-strata.gif",
@@ -116,7 +122,9 @@
           "duration": "8.000000",
           "size": "257815"
         }
-      }
+      },
+      "encodedDurationSeconds": 8.0,
+      "encodedFrames": 80
     },
     {
       "file": "site/media/deepseek-pi.gif",
@@ -145,7 +153,9 @@
           "duration": "8.000000",
           "size": "362396"
         }
-      }
+      },
+      "encodedDurationSeconds": 8.0,
+      "encodedFrames": 80
     },
     {
       "file": "site/media/deepseek-graphify.gif",
@@ -162,10 +172,13 @@
         30.503
       ],
       "kind": "continuous real-time browser recording excerpt",
-      "fps": 10,
+      "fps": 12,
       "width": 640,
       "silent": true,
-      "reusedExisting": true
+      "reusedExisting": true,
+      "encodedDurationSeconds": 8.0,
+      "encodedFrames": 96,
+      "sourceRole": "Public MP4 reference for the same combat segment. Existing GIF reused byte-for-byte; its exact original encoder recipe was not re-established."
     }
   ]
 }

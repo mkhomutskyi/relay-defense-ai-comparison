@@ -12,6 +12,6 @@ Run the public-repository checks from the repository root:
 python scripts/check_public.py
 ```
 
-Gameplay GIFs must come from actual browser recordings. Keep them short and silent, disclose cuts, and record source hashes and excerpt times in `results/gif-provenance.json`. Do not add game resources, accelerate time or generate substitute gameplay images. The existing GIFs can be reproduced with `python scripts/make_gifs.py`; FFmpeg is required.
+Gameplay GIFs must come from actual browser recordings. Keep them short and silent, disclose cuts, and record source hashes and excerpt times in `results/gif-provenance.json`. Do not add game resources, accelerate time or generate substitute gameplay images. Generate equivalent previews from the public MP4s with `python scripts/make_gifs.py`; FFmpeg is required. Re-encoding need not reproduce the original GIF bytes, particularly the reused Graphify excerpt. Published hashes identify the originals.
 
 Report vulnerabilities through the private route in [SECURITY.md](SECURITY.md), rather than a public issue.
