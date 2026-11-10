@@ -1,7 +1,7 @@
 {
   "date": "2026-11-10",
-  "primaryCover": "cover-hardware-v8.png",
-  "sha256": "1a167fbdad2bee02968ea5fb08093bdbe9e75774374fbe76f203e95250c6e651",
+  "primaryCover": "cover-hardware-v9.png",
+  "sha256": "393bf4e38a8a452e5a704bb69220827975acf503618de71eff5c6df82b6ce40f",
   "kind": "AI-assisted editorial hardware composite",
   "renderMachine": "AMD Ryzen AI 9 HX 370 server",
   "runtime": "ComfyUI",
@@ -17,5 +17,18 @@
     "Orange Pi series"
   ],
   "hardwareReference": "AI X1 Pro hardware illustration preserved through ComfyUI masked compositing",
-  "disclosure": "Illustration, not a hardware photo, game screenshot or performance measurement. PNG text metadata removed without changing image pixels."
+  "disclosure": "Illustration, not a hardware photo, game screenshot or performance measurement. PNG text metadata removed without changing image pixels.",
+  "typographyCorrection": {
+    "sourceCover": "cover-hardware-v8.png",
+    "correctLabel": "Ryzen AI 9 HX 370",
+    "renderMachine": "AMD server",
+    "method": "Deterministic source-composition typography correction; no new AI inference",
+    "changedPixelRegion": [
+      520,
+      345,
+      1001,
+      415
+    ],
+    "otherArtworkPixelsPreserved": true
+  }
 }
