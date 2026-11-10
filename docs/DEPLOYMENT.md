@@ -1,6 +1,8 @@
-# Deployment preparation
+# Hosting and deployment
 
 ## Static games
+
+Public play page: https://mkhomutskyi.github.io/relay-defense-ai-comparison/ . Published with the manual Pages workflow on 10 November 2026. The workflow uploads committed bundles; it does not build or generate games in the cloud.
 
 The `site/` folder can be hosted by GitHub Pages. The owner requested public access. Pages publication uses the manual GitHub Actions workflow. The workflow is manual-only; pushing does not publish automatically. It deploys the prepared static files and performs no new game generation. Verify the repository-prefixed URLs, asset requests and fullscreen/input on the final origin.
 

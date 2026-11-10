@@ -2,7 +2,9 @@
 
 Six saved browser tower-defense games, generated through different model/runtime/agent workflows. This repository contains their source, static browser bundles and comparison page. Playing requires no language model, API key or home-server access.
 
-**Release status:** the owner requested public access; the repository and static play page are being published. Production reader voting is not enabled. The star interface works locally; the shared rating service requires deployment/configuration. These are different games with different development histories, not a controlled model leaderboard.
+**[Play all six games](https://mkhomutskyi.github.io/relay-defense-ai-comparison/)** · [Source and build notes](https://github.com/mkhomutskyi/relay-defense-ai-comparison)
+
+The repository and GitHub Pages site are public. Production reader voting is not enabled. The star interface works locally; the shared rating service requires deployment/configuration. These are different games with different development histories, not a controlled model leaderboard.
 
 ![Actual DeepSeek and Graphify game during boss combat](site/media/deepseek-graphify.png)
 
@@ -53,6 +55,6 @@ Production requires a D1 database, the real database binding, allowed public ori
 
 Selected screenshots and clips come from actual browser execution. Silent clips/GIFs do not establish sound quality or client FPS. Owner preference is separate from public reader feedback. The comparison UI, rating service, packaging and article graphics are coordinator-authored infrastructure, not model-generated game output.
 
-The machine was a refurbished MINISFORUM AI X1 Pro, Ryzen AI 9 HX 370, 64 GB RAM. The refurbished barebone cost $522.63 including tax. The owner was lucky to find 64 GB of used DDR5 on eBay for $500. Recorded new spending was $1,022.63; the NVMe drive was reused. This corrects the earlier $520 RAM / $1,042.63 total reported in the preparation history. Local inference ran on that AMD machine; both DeepSeek arms used hosted inference while tools/builds/browser ran locally. The hardware/setup notes are in [minisforum-hx370-local-ai](https://github.com/mkhomutskyi/minisforum-hx370-local-ai).
+The machine was a refurbished MINISFORUM AI X1 Pro, Ryzen AI 9 HX 370, 64 GB RAM. The refurbished barebone cost $522.63 including tax. The owner was lucky to find 64 GB of used DDR5 on eBay for $500. Recorded new spending was $1,022.63; the NVMe drive was reused. Local inference ran on that AMD machine; both DeepSeek arms used hosted inference while tools/builds/browser ran locally. The hardware/setup notes are in [minisforum-hx370-local-ai](https://github.com/mkhomutskyi/minisforum-hx370-local-ai).
 
 Keep Phaser/template and dependency license notices. See [credits](docs/CREDITS.md). No weights, credentials, account records, private infrastructure configuration or raw model sessions belong in this repository.

@@ -1,3 +1,19 @@
+# Public hosting verification — 10 November 2026
+
+The repository and play page are public. Anonymous requests returned HTTP 200 for both. The manual GitHub Pages deployment completed successfully. It uploads the static bundles already built on the AMD server; it does not generate or compile games in GitHub Actions.
+
+Browser checks ran on the owner's AMD machine against the public origin. All 17 checks passed: six gallery entries, six video previews, a loaded canvas for every game, honest disconnected-voting messages for every game, mobile gallery fit, and no observed page or HTTP errors. Screenshots were retained. These checks establish public loading, not a new full-campaign test, sound-quality assessment or player-device performance benchmark.
+
+The six saved game sources, static game bundles and genuine gameplay media are unchanged from the prepared release. Native Vulkan remains a playable prototype with a missing map, overlapping UI and its recorded TypeScript unused-method error. It was not repaired for publication.
+
+The RAM record was corrected to a lucky $500 used eBay purchase for 64 GB. Barebone including tax: $522.63. Reused NVMe. Recorded new spending: $1,022.63. The article cover follows the owner's Intel Arc and Orange Pi hardware-sketch style. New lettering/supporting sketches were generated locally; the final cover was composed locally with the earlier accurate AI X1 Pro illustration. It is editorial artwork, not gameplay evidence.
+
+Production shared rating collection remains unconfigured. No synthetic QA votes are presented as reader feedback. The Medium article remains a draft.
+
+The earlier preparation checks below are retained with their original date and scope.
+
+---
+
 # Release-copy validation
 
 Checked9November2026 on the owner's AMD machine. This validates packaging/review infrastructure, not a new model-quality benchmark or a fresh full campaign certification.

@@ -1,3 +1,7 @@
+# Current release status — 10 November 2026
+
+The owner clarified public access. The repository and static games are now public. The original preparation plan below is retained as history. Production shared ratings remain unconfigured; the Medium article remains a draft.
+
 # Release preparation
 
 Original request: prepare a clean GitHub repository for the six saved Relay Defense games, reader star ratings and genuine gameplay media; draft the Medium article in the owner's blue/black/yellow sketch style with restrained humor.
