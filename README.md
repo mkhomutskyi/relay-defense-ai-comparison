@@ -8,9 +8,7 @@ The repository and GitHub Pages site are public. Production reader voting is not
 
 ![Actual DeepSeek and Graphify game during boss combat](site/media/deepseek-graphify.png)
 
-![Silent continuous excerpt of actual targeting and firing](site/media/deepseek-graphify.gif)
-
-The GIF is a continuous real-time combat excerpt. The comparison page also includes six compact videos. The Graphify video joins setup and combat with the waiting interval removed; the cut is disclosed beside it. Clips are silent and do not establish client-device frame rate or perceived audio quality.
+The GIF previews below are continuous eight-second real-time gameplay excerpts. The comparison page also includes six compact videos. The Graphify video joins setup and combat with the waiting interval removed; the cut is disclosed beside it. Clips are silent and do not establish client-device frame rate or perceived audio quality.
 
 ## Owner's final preference
 
@@ -26,6 +24,48 @@ The GIF is a continuous real-time combat excerpt. The comparison page also inclu
 API usage includes compatibility preflight; excludes outside coordination, setup, independent QA, human effort, hardware and electricity. Most times sum coding/repair phases; 27B is a broader wall span. The 27B harness had significant limitations. GLM used text-only feedback and several recoveries. No general ranking of all local models follows.
 
 Graphify's game won the owner's review. There was one fresh hosted game per configuration. The Graphify session used more in-session API/tool/image work, so the difference cannot be assigned causally to Graphify. Its actual code queries confirmed relationships; no hidden bug discovery or token saving was established.
+
+## Gameplay GIFs and direct play links
+
+Each GIF opens the corresponding browser game. These silent clips show the saved builds, including their defects. Listen to sound in the playable games.
+
+### DeepSeek Flash · Pi + Graphify
+
+[Play this build](https://mkhomutskyi.github.io/relay-defense-ai-comparison/?game=deepseek-graphify)
+
+[![DeepSeek Flash · Pi + Graphify — actual gameplay](site/media/deepseek-graphify.gif)](https://mkhomutskyi.github.io/relay-defense-ai-comparison/?game=deepseek-graphify)
+
+### DeepSeek Flash · Pi
+
+[Play this build](https://mkhomutskyi.github.io/relay-defense-ai-comparison/?game=deepseek-pi)
+
+[![DeepSeek Flash · Pi — actual gameplay](site/media/deepseek-pi.gif)](https://mkhomutskyi.github.io/relay-defense-ai-comparison/?game=deepseek-pi)
+
+### Flash-Next · Strata · Pi
+
+[Play this build](https://mkhomutskyi.github.io/relay-defense-ai-comparison/?game=qwen-strata)
+
+[![Flash-Next · Strata · Pi — actual gameplay](site/media/qwen-strata.gif)](https://mkhomutskyi.github.io/relay-defense-ai-comparison/?game=qwen-strata)
+
+### GLM-5.3-Flash · Strata · Pi
+
+[Play this build](https://mkhomutskyi.github.io/relay-defense-ai-comparison/?game=glm-strata)
+
+[![GLM-5.3-Flash · Strata · Pi — actual gameplay](site/media/glm-strata.gif)](https://mkhomutskyi.github.io/relay-defense-ai-comparison/?game=glm-strata)
+
+### Flash-Next · LM Studio Vulkan · Pi
+
+[Play this build](https://mkhomutskyi.github.io/relay-defense-ai-comparison/?game=qwen-native)
+
+[![Flash-Next · LM Studio Vulkan · Pi — actual gameplay](site/media/qwen-native.gif)](https://mkhomutskyi.github.io/relay-defense-ai-comparison/?game=qwen-native)
+
+### Qwen3.8-27B · Vulkan · Pi
+
+[Play this build](https://mkhomutskyi.github.io/relay-defense-ai-comparison/?game=qwen27)
+
+[![Qwen3.8-27B · Vulkan · Pi — actual gameplay](site/media/qwen27.gif)](https://mkhomutskyi.github.io/relay-defense-ai-comparison/?game=qwen27)
+
+[GIF source intervals and provenance](results/gif-provenance.json).
 
 ## Play the prepared site locally
 
@@ -58,3 +98,5 @@ Selected screenshots and clips come from actual browser execution. Silent clips/
 The machine was a refurbished MINISFORUM AI X1 Pro, Ryzen AI 9 HX 370, 64 GB RAM. The refurbished barebone cost $522.63 including tax. The owner was lucky to find 64 GB of used DDR5 on eBay for $520. Recorded new spending was $1,042.63; the NVMe drive was reused. Local inference ran on that AMD machine; both DeepSeek arms used hosted inference while tools/builds/browser ran locally. The hardware/setup notes are in [minisforum-hx370-local-ai](https://github.com/mkhomutskyi/minisforum-hx370-local-ai).
 
 Keep Phaser/template and dependency license notices. See [credits](docs/CREDITS.md). No weights, credentials, account records, private infrastructure configuration or raw model sessions belong in this repository.
+
+For changes, read [Contributing](CONTRIBUTING.md), the [security policy](SECURITY.md) and the [MIT License](LICENSE). Run `python scripts/check_public.py` before submitting. It checks privacy patterns, both exact captured/published source representations and all six GIF/source hashes; GitHub runs the same check on pushes and pull requests. The original source capture and Git's line-ending-normalized snapshot are recorded separately in `results/source-hashes.json` and `results/git-source-hashes.json`.

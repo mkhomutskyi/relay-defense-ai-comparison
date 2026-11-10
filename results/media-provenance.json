@@ -91,6 +91,41 @@
       "sha256": "7937abc72d95cf98e4a35495ad34c33b04e76790d53bf754b0a2a15f93664d87",
       "kind": "actual game observation",
       "silent": null
+    },
+    {
+      "file": "site/media/qwen27.gif",
+      "bytes": 186798,
+      "sha256": "72bff1a5864893b65ed43e70b174d29f8281ead57f767ff5fb005a5d0f16df42",
+      "kind": "actual game observation",
+      "silent": true
+    },
+    {
+      "file": "site/media/qwen-native.gif",
+      "bytes": 340643,
+      "sha256": "f8feaf1b00a3065b8d680ff2b8e8d6f5449178239124e9cb6e26b8e8ce65c133",
+      "kind": "actual game observation",
+      "silent": true
+    },
+    {
+      "file": "site/media/qwen-strata.gif",
+      "bytes": 516209,
+      "sha256": "ca4a79863c2a27fb1bdb8df4eed13eaf41e825acf9644b13d8ef324bf88740c5",
+      "kind": "actual game observation",
+      "silent": true
+    },
+    {
+      "file": "site/media/glm-strata.gif",
+      "bytes": 257815,
+      "sha256": "7082de541c2c984fa0c8be7801d4d3f62b5ed0c09803230fd904341a8d2a76fe",
+      "kind": "actual game observation",
+      "silent": true
+    },
+    {
+      "file": "site/media/deepseek-pi.gif",
+      "bytes": 362396,
+      "sha256": "45ab12e083b58089087e8e0a7a54afe7f0adf8a5104e85ec1732b061984c3570",
+      "kind": "actual game observation",
+      "silent": true
     }
   ],
   "graphifyVideoEdits": {
@@ -107,5 +142,6 @@
     22.503,
     30.503
   ],
-  "scope": "Normal-speed browser captures. A disclosed waiting cut is present only in the Graphify MP4. No game code or resources modified. Raw recordings retained privately."
+  "scope": "Normal-speed browser captures. A disclosed waiting cut is present only in the Graphify MP4. No game code or resources modified. Raw recordings retained privately.",
+  "gifExcerptManifest": "results/gif-provenance.json"
 }

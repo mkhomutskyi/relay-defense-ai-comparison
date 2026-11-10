@@ -1,0 +1,31 @@
+name: Game or showcase problem
+description: Report a reproducible problem in one of the saved games or the comparison page.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not post API keys, private server addresses or personal information. For vulnerabilities use the repository's Security → Report a vulnerability route."
+  - type: dropdown
+    id: build
+    attributes:
+      label: Build or page
+      options:
+        - DeepSeek Flash — Pi + Graphify
+        - DeepSeek Flash — Pi
+        - Qwen Flash-Next — Strata
+        - GLM-5.3-Flash — Strata
+        - Qwen Flash-Next — LM Studio Vulkan
+        - Qwen3.8-27B — Vulkan
+        - Comparison page
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps, expected behavior and actual behavior
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device type

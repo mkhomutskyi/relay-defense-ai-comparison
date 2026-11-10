@@ -1,0 +1,171 @@
+{
+  "date": "2026-11-10",
+  "scope": "Eight-second silent gameplay GIFs from saved browser recordings; no new game generation, gameplay changes, extra resources or time acceleration. All media conversion ran on the AMD server.",
+  "gifs": [
+    {
+      "file": "site/media/qwen27.gif",
+      "source": "site/media/qwen27.mp4",
+      "sourceSha256": "850fdf7135e4cfb560d40dd55c5111454039651ed92965938ed3dd1de5e8c960",
+      "sha256": "72bff1a5864893b65ed43e70b174d29f8281ead57f767ff5fb005a5d0f16df42",
+      "excerptSeconds": [
+        10,
+        18
+      ],
+      "kind": "continuous real-time browser recording excerpt",
+      "fps": 10,
+      "width": 640,
+      "silent": true,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 400,
+            "nb_read_frames": "80"
+          }
+        ],
+        "format": {
+          "duration": "8.000000",
+          "size": "186798"
+        }
+      }
+    },
+    {
+      "file": "site/media/qwen-native.gif",
+      "source": "site/media/qwen-native.mp4",
+      "sourceSha256": "7b680a7debd3039fdbed924f28801255b94abf9ef5de928d7eadaa7f71cdad37",
+      "sha256": "f8feaf1b00a3065b8d680ff2b8e8d6f5449178239124e9cb6e26b8e8ce65c133",
+      "excerptSeconds": [
+        1,
+        9
+      ],
+      "kind": "continuous real-time browser recording excerpt",
+      "fps": 10,
+      "width": 640,
+      "silent": true,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 400,
+            "nb_read_frames": "80"
+          }
+        ],
+        "format": {
+          "duration": "8.000000",
+          "size": "340643"
+        }
+      }
+    },
+    {
+      "file": "site/media/qwen-strata.gif",
+      "source": "site/media/qwen-strata.mp4",
+      "sourceSha256": "b8c0a484b4553d2583af6e38255bb7e362dacfeab5914b3c450e2ee17cafda16",
+      "sha256": "ca4a79863c2a27fb1bdb8df4eed13eaf41e825acf9644b13d8ef324bf88740c5",
+      "excerptSeconds": [
+        0,
+        8
+      ],
+      "kind": "continuous real-time browser recording excerpt",
+      "fps": 10,
+      "width": 640,
+      "silent": true,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 400,
+            "nb_read_frames": "80"
+          }
+        ],
+        "format": {
+          "duration": "8.000000",
+          "size": "516209"
+        }
+      }
+    },
+    {
+      "file": "site/media/glm-strata.gif",
+      "source": "site/media/glm-strata.mp4",
+      "sourceSha256": "42e29d25a6dc584e21a8c5fcfce59a94f746224cf610bc619da8d4fc1062e652",
+      "sha256": "7082de541c2c984fa0c8be7801d4d3f62b5ed0c09803230fd904341a8d2a76fe",
+      "excerptSeconds": [
+        2,
+        10
+      ],
+      "kind": "continuous real-time browser recording excerpt",
+      "fps": 10,
+      "width": 640,
+      "silent": true,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 400,
+            "nb_read_frames": "80"
+          }
+        ],
+        "format": {
+          "duration": "8.000000",
+          "size": "257815"
+        }
+      }
+    },
+    {
+      "file": "site/media/deepseek-pi.gif",
+      "source": "site/media/deepseek-pi.mp4",
+      "sourceSha256": "3404c07844905d06e429dd37e36f2feb01b708ccd5dadba98cd20124a4162cd3",
+      "sha256": "45ab12e083b58089087e8e0a7a54afe7f0adf8a5104e85ec1732b061984c3570",
+      "excerptSeconds": [
+        10,
+        18
+      ],
+      "kind": "continuous real-time browser recording excerpt",
+      "fps": 10,
+      "width": 640,
+      "silent": true,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 400,
+            "nb_read_frames": "80"
+          }
+        ],
+        "format": {
+          "duration": "8.000000",
+          "size": "362396"
+        }
+      }
+    },
+    {
+      "file": "site/media/deepseek-graphify.gif",
+      "source": "site/media/deepseek-graphify.mp4",
+      "sourceSha256": "26b82725111f2edb86815c8a41494f4d9d23981e36cf6c316e27184e258765a3",
+      "sha256": "550f31363017cb0deb848a62fb6020765a6ecb544d2ee85119131779d3e99ae3",
+      "excerptSeconds": [
+        5.96,
+        13.96
+      ],
+      "excerptSelection": "Existing ffmpeg -sseof -10 -t 8 excerpt; continuous combat after the disclosed MP4 setup/combat cut",
+      "originalRecordingSeconds": [
+        22.503,
+        30.503
+      ],
+      "kind": "continuous real-time browser recording excerpt",
+      "fps": 10,
+      "width": 640,
+      "silent": true,
+      "reusedExisting": true
+    }
+  ]
+}

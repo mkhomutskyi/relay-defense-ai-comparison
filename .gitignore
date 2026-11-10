@@ -5,4 +5,14 @@ node_modules/
 output/
 *.log
 __pycache__/
+.ssh/
+id_rsa
+id_ed25519
+*.pem
+*.key
+*.p12
+*.pfx
+*.gguf
+*.safetensors
+*.onnx
 !site/games/**
