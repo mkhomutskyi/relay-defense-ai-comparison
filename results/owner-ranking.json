@@ -132,7 +132,7 @@
       "id": "qwen27",
       "name": "Qwen3.8-27B Q4_K_M + LM Studio Vulkan + Pi",
       "seconds": 31200,
-      "scope": "Approximate start-to-final-freeze wall span; includes interventions and gaps; not a Pi-only clock",
+      "scope": "Original broad elapsed record, including preparation/interventions/gaps; not model-active time. Article allocation is estimated separately in publicationTimingEstimate.",
       "api_usd": 0,
       "electricity_scenarios": {
         "50": {
@@ -150,6 +150,12 @@
           "kWh": 0.8666666666666667,
           "usd": 0.15738666666666667
         }
+      },
+      "publicationTimingEstimate": {
+        "preparationSeconds": 16200,
+        "qwenWorkSeconds": 15000,
+        "totalElapsedSeconds": 31200,
+        "basis": "Owner-requested retrospective estimate: 4h30m preparation plus 4h10m Qwen work; not separately instrumented. Original broad elapsed record retained in seconds."
       }
     }
   ],
@@ -160,5 +166,5 @@
   },
   "energyScope": "50/75/100W are assumed whole-box sensitivity scenarios, not wall-meter observations or confidence bounds. Applied only to listed intervals; excludes setup/downloads/benchmarks/inter-phase gaps except included in27B wall span, later QA, ongoing server idle and cloud-provider electricity. API spend excludes coordinator compute and labor. Local zero API entries exclude outside coordination too.",
   "currentElectricityEstimate": "electricity-estimate.json",
-  "electricityScenarioNote": "Original uniform-power scenarios are retained as historical illustrations. The article now uses the separately documented mixed-load estimate; measured times, API bills and rankings are unchanged."
+  "electricityScenarioNote": "Original uniform-power scenarios remain historical broad-window illustrations. Current article timing uses the owner-requested estimated preparation/work split; use electricity-estimate.json for current phase energy. Raw elapsed times, API bills and rankings are retained."
 }

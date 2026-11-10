@@ -11,48 +11,43 @@
   },
   "assumptions": {
     "localCodingWatts": 100,
-    "earliestQwenMixedWatts": 75,
-    "lightWorkWatts": 20,
+    "lightPreparationWatts": 20,
     "hostedWorkflowLocalWatts": 30,
-    "preparationHours": 8,
-    "preparationActiveHours": 3.5,
-    "preparationLightHours": 4.5
+    "preparationHours": 4.5,
+    "qwenWorkHours": 4.166666666666667
   },
   "phases": [
     {
       "id": "preparation",
-      "label": "Preparation allowance",
-      "hours": 8,
+      "label": "Preparation (estimated allocation)",
+      "seconds": 16200,
+      "hours": 4.5,
       "loadSegments": [
-        {
-          "hours": 3.5,
-          "watts": 100
-        },
         {
           "hours": 4.5,
           "watts": 20
         }
       ],
-      "basis": "Owner-suggested eight-hour allowance, modeled as 3.5 hours active and 4.5 hours light work; not timed separately in the experiment ledger.",
-      "estimatedKWh": 0.43999999999999995,
-      "estimatedElectricityUsd": 0.07990399999999999
+      "basis": "Owner-requested estimated allocation within the first broad elapsed window; not an additional allowance or an instrumented preparation duration.",
+      "estimatedKWh": 0.09,
+      "estimatedElectricityUsd": 0.016344
     },
     {
       "id": "qwen27",
       "label": "Qwen3.8-27B",
-      "seconds": 31200,
-      "hours": 8.666666666666666,
+      "seconds": 15000,
+      "hours": 4.166666666666667,
       "loadSegments": [
         {
-          "hours": 8.666666666666666,
-          "watts": 75
+          "hours": 4.166666666666667,
+          "watts": 100
         }
       ],
-      "basis": "75 W mixed-use average over the broad wall span, including gaps",
-      "timingScope": "Approximate start-to-final-freeze wall span; includes interventions and gaps; not a Pi-only clock",
+      "basis": "Owner-requested estimated 4h10m Qwen work allocation, with a 100 W whole-box assumption; not measured model-active time.",
+      "timingScope": "Estimated work allocation after assigning 4h30m to preparation within the original broad elapsed window.",
       "apiUsd": 0,
-      "estimatedKWh": 0.65,
-      "estimatedElectricityUsd": 0.11804
+      "estimatedKWh": 0.4166666666666667,
+      "estimatedElectricityUsd": 0.07566666666666667
     },
     {
       "id": "qwen-native",
@@ -140,82 +135,36 @@
       "estimatedElectricityUsd": 0.0024133520133333337
     }
   ],
-  "includingSeparatePreparation": {
-    "modeledHours": 27.006123125615723,
-    "estimatedKWh": 2.0676051347837947,
-    "estimatedElectricityUsd": 0.37547709247673716,
-    "recordedApiUsd": 0.32923678199999995,
-    "modeledElectricityPlusRecordedApiUsd": 0.7047138744767372
-  },
-  "excludingPotentiallyOverlappingPreparation": {
-    "modeledHours": 19.006123125615726,
-    "estimatedKWh": 1.6276051347837948,
-    "estimatedElectricityUsd": 0.29557309247673713,
-    "recordedApiUsd": 0.32923678199999995,
-    "modeledElectricityPlusRecordedApiUsd": 0.6248098744767371
-  },
-  "preparation3to4ActiveHoursRange": {
-    "estimatedKWh": [
-      0.4,
-      0.48
-    ],
-    "estimatedUsd": [
-      0.07264000000000001,
-      0.087168
-    ]
-  },
-  "hypothetical150WLocalSensitivity": {
-    "phases": [
-      {
-        "id": "preparation",
-        "estimatedKWh": 0.615,
-        "estimatedElectricityUsd": 0.111684
-      },
-      {
-        "id": "qwen27",
-        "estimatedKWh": 1.3,
-        "estimatedElectricityUsd": 0.23608
-      },
-      {
-        "id": "qwen-native",
-        "estimatedKWh": 0.2507905390833334,
-        "estimatedElectricityUsd": 0.04554356189753334
-      },
-      {
-        "id": "qwen-strata",
-        "estimatedKWh": 0.29597033333333334,
-        "estimatedElectricityUsd": 0.05374821253333334
-      },
-      {
-        "id": "glm-strata",
-        "estimatedKWh": 0.8834279297590255,
-        "estimatedElectricityUsd": 0.16043051204423905
-      },
-      {
-        "id": "deepseek-pi",
-        "estimatedKWh": 0.01085655,
-        "estimatedElectricityUsd": 0.00197154948
-      },
-      {
-        "id": "deepseek-graphify",
-        "estimatedKWh": 0.013289383333333335,
-        "estimatedElectricityUsd": 0.0024133520133333337
-      }
-    ],
-    "estimatedKWh": 3.3693347355090255,
-    "estimatedElectricityUsd": 0.6118711879684391,
-    "note": "What-if stress allowance, not measured draw or a certified upper bound. Preparation still uses only 3.5 active hours; hosted workflows remain 30 W locally."
-  },
   "exclusions": [
     "Unlogged runtime screens, downloads, independent QA, later article/media work and server idle outside listed windows",
     "Displays, networking and separate coordinator hardware",
     "Human effort and hardware purchase/depreciation",
     "DeepSeek provider energy, which was not measured"
   ],
-  "timingCaveat": "The eight-hour preparation allowance is user-supplied and may overlap the broad first-Qwen clock. Both totals are reported; neither is the measured full research-project bill.",
+  "timingCaveat": "Preparation/work split for the first Qwen window is an owner-requested retrospective estimate. Other clocks retain their recorded boundaries. No rerun was performed and no exact model-active time is claimed.",
   "sources": {
     "manufacturer": "https://www.minisforum.com/collections/ai-pcs/products/minisforum-ai-x1-pro",
     "originalReview": "https://www.notebookcheck.net/Minisforum-AI-X1-Pro-review-An-all-round-mini-PC-for-the-office-multimedia-gaming-and-creative-tasks.973433.0.html",
     "electricityRate": "https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a"
+  },
+  "revision": "Owner-requested preparation/work split; supersedes separate eight-hour preparation allowance and overlap alternatives.",
+  "total": {
+    "modeledHours": 19.006123125615726,
+    "estimatedKWh": 1.4842718014504614,
+    "estimatedElectricityUsd": 0.26954375914340384,
+    "recordedApiUsd": 0.32923678199999995,
+    "modeledElectricityPlusRecordedApiUsd": 0.5987805411434037
+  },
+  "timingAllocation": {
+    "originalElapsedSeconds": 31200,
+    "preparationSeconds": 16200,
+    "qwenWorkSeconds": 15000,
+    "type": "Owner-requested retrospective estimate, not separately timed measurements",
+    "doubleCounting": "Preparation replaces part of the original broad elapsed window; no additional eight-hour allowance."
+  },
+  "hypothetical150WLocalSensitivity": {
+    "estimatedKWh": 2.1693347355090253,
+    "estimatedElectricityUsd": 0.39395118796843903,
+    "note": "150 W for local-model work only, 20 W preparation and 30 W hosted tools. What-if estimate, not measured draw or a certified upper bound."
   }
 }

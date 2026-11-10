@@ -12,16 +12,16 @@ The GIF previews below are continuous eight-second real-time gameplay excerpts. 
 
 ## My final ranking
 
-| Place | Development workflow | Recorded creation time | DeepSeek API usage |
+| Place | Development workflow | Creation time / estimate | DeepSeek API usage |
 |---|---|---:|---:|
 |1|DeepSeek Flash API + Pi + Graphify|26m35s|$0.1847|
 |2|DeepSeek Flash API + Pi|21m43s, including a later fix|$0.1446|
 |3|Qwen3.8-Flash-Next IQ2_XS + Strata HIP/MTP + Pi|1h58m23s|No local inference API fee|
 |4|GLM-5.3-Flash + Strata Q2/Q3 Experts + Pi|5h53m22s|No local inference API fee|
 |5|Qwen3.8-Flash-Next IQ2_XS + LM Studio Vulkan + Pi|1h40m19s; playable, map missing|No local inference API fee|
-|6|Qwen3.8-27B Q4_K_M + LM Studio Vulkan + Pi, early harness|About 8h40m wall span|No local inference API fee|
+|6|Qwen3.8-27B Q4_K_M + LM Studio Vulkan + Pi, early harness|About 4h10m work (estimated)|No local inference API fee|
 
-API usage includes compatibility preflight; excludes outside coordination, setup, independent QA, human effort, hardware and electricity. Most times sum coding/repair phases; 27B is a broader wall span. The 27B harness had significant limitations. GLM used text-only feedback and several recoveries. No general ranking of all local models follows.
+API usage includes compatibility preflight; excludes outside coordination, setup, independent QA, human effort, hardware and electricity. Most times sum recorded coding/repair phases. Qwen 27B uses an estimated allocation of 4h10m work plus 4h30m preparation within its original elapsed window; those portions were not timed separately. The 27B harness had significant limitations. GLM used text-only feedback and several recoveries. No general ranking of all local models follows.
 
 Graphify's game won my review. There was one fresh hosted game per configuration. The Graphify session used more in-session API/tool/image work, so the difference cannot be assigned causally to Graphify. Its actual code queries confirmed relationships; no hidden bug discovery or token saving was established.
 
@@ -93,7 +93,7 @@ Production requires a D1 database, the real database binding, allowed public ori
 
 ## Estimated electricity
 
-The current mixed-load illustration budgets 100 W for local coding, 75 W for the first broad Qwen window, 30 W for hosted-workflow tools and 20 W for light preparation. At 18.16 cents/kWh, the listed periods plus a separate eight-hour preparation allowance total about **2.07 kWh / $0.38 electricity**. If that allowance overlaps the first Qwen clock, the alternative is **1.63 kWh / $0.30**. These are assumptions, not wall-meter measurements or the complete research bill. The two recorded DeepSeek API charges add $0.3292 separately. See [power evidence, per-phase estimates and scope](docs/ELECTRICITY.md).
+The current mixed-load illustration budgets 100 W for local coding, 30 W for hosted-workflow tools and 20 W for preparation. The first Qwen window is allocated to an estimated **4h30m preparation + 4h10m Qwen work**, with preparation counted once. At 18.16 cents/kWh, the listed periods total about **1.48 kWh / $0.27 electricity**. These are assumptions, not wall-meter measurements or the complete research bill. Both DeepSeek API charges add $0.3292 separately, giving approximately **$0.60 electricity plus API charges**. See [power evidence, per-phase estimates and scope](docs/ELECTRICITY.md).
 
 DeepSeek still uses local electricity: the estimate includes the AMD box running Pi, tools, builds and browser tests at an assumed 30 W. Hosted inference needs no local AI accelerator or model weights, so an existing computer can avoid an AI-hardware purchase. For Pi's API-client role, 2 vCPUs / 2 GB RAM is a suggested starting allocation, not a tested minimum. A suitable 64-bit Raspberry Pi or Linux container on it is a plausible client host; builds, Graphify and browser automation may need more resources. These smaller setups were not benchmarked. See [client sizing and evidence](docs/ELECTRICITY.md#hosted-inference-still-uses-local-electricity).
 

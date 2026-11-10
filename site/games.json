@@ -5,11 +5,11 @@
     "stack": "Q4_K_M · LM Studio Vulkan · Pi (early harness)",
     "inference": "Local inference",
     "status": "Earlier 12-wave build",
-    "note": "The earlier workflow and scope differ from the later games.",
+    "note": "Estimated allocation: 4h10m work plus 4h30m preparation within the original elapsed window, not separately timed. The earlier workflow and scope differ from later games.",
     "controls": "Start Game → choose a tower → click a build pad → Next Wave. Use the visible pause, mute and restart buttons.",
     "version": "20261109-frozen-v1",
     "rank": 6,
-    "creation": "about 8h40m wall span",
+    "creation": "about 4h10m work (estimated)",
     "api": null,
     "video": true
   },
