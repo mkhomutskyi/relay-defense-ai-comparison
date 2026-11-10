@@ -20,6 +20,6 @@ The source files, current public history, workflow logs and Pages artifacts were
 
 Each result is one saved game with its own development history. The early 27B workflow had restrictive tool limits and tooling defects. GLM had text-only feedback and several recovery phases. Later runs used an updated Pi setup. These results support a comparison of the saved games, not a general model leaderboard.
 
-Creation clocks have different boundaries. API charges exclude setup, outside coordination, independent checks, human effort, hardware and electricity. The electricity estimate is an illustrative whole-box assumption, not a wall-plug measurement. Graphify's run used more in-session calls and image review, so its first-place result cannot be attributed to Graphify alone.
+Creation clocks have different boundaries. API charges exclude setup, outside coordination, independent checks, human effort, hardware and electricity. The [electricity estimate](ELECTRICITY.md) uses explicit workload-based whole-box assumptions, a separate preparation allowance and an overlap alternative; it is not a wall-plug measurement. Graphify's run used more in-session calls and image review, so its first-place result cannot be attributed to Graphify alone.
 
 Shared reader voting is not enabled. Local rating checks covered input validation, vote updates, optional categories, hostile origins and submission failures; synthetic test votes are not public reader feedback. The optional service needs its production configuration and abuse controls before public collection.

@@ -1,0 +1,221 @@
+{
+  "date": "2026-11-10",
+  "type": "illustrative workload-based whole-computer electricity estimate, not a wall-meter reading",
+  "rateUsdPerKWh": 0.1816,
+  "rateBasis": "Latest EIA U.S. residential average available on 10 November 2026: August 2026, 18.16 cents/kWh; released 23 October. Not the owner tariff.",
+  "powerEvidence": {
+    "powerSupplyRatedWatts": 135,
+    "reviewAverageLoadWatts": 70.2,
+    "reviewObservedPeakWatts": 97.7,
+    "scope": "Original HX 370 AI X1 Pro review, not HX 470 or EliteMini AI370; highest observed review value is not a guaranteed universal maximum."
+  },
+  "assumptions": {
+    "localCodingWatts": 100,
+    "earliestQwenMixedWatts": 75,
+    "lightWorkWatts": 20,
+    "hostedWorkflowLocalWatts": 30,
+    "preparationHours": 8,
+    "preparationActiveHours": 3.5,
+    "preparationLightHours": 4.5
+  },
+  "phases": [
+    {
+      "id": "preparation",
+      "label": "Preparation allowance",
+      "hours": 8,
+      "loadSegments": [
+        {
+          "hours": 3.5,
+          "watts": 100
+        },
+        {
+          "hours": 4.5,
+          "watts": 20
+        }
+      ],
+      "basis": "Owner-suggested eight-hour allowance, modeled as 3.5 hours active and 4.5 hours light work; not timed separately in the experiment ledger.",
+      "estimatedKWh": 0.43999999999999995,
+      "estimatedElectricityUsd": 0.07990399999999999
+    },
+    {
+      "id": "qwen27",
+      "label": "Qwen3.8-27B",
+      "seconds": 31200,
+      "hours": 8.666666666666666,
+      "loadSegments": [
+        {
+          "hours": 8.666666666666666,
+          "watts": 75
+        }
+      ],
+      "basis": "75 W mixed-use average over the broad wall span, including gaps",
+      "timingScope": "Approximate start-to-final-freeze wall span; includes interventions and gaps; not a Pi-only clock",
+      "apiUsd": 0,
+      "estimatedKWh": 0.65,
+      "estimatedElectricityUsd": 0.11804
+    },
+    {
+      "id": "qwen-native",
+      "label": "Flash-Next / Vulkan",
+      "seconds": 6018.972938000001,
+      "hours": 1.6719369272222224,
+      "loadSegments": [
+        {
+          "hours": 1.6719369272222224,
+          "watts": 100
+        }
+      ],
+      "basis": "Conservative 100 W whole-box allowance over recorded coding/repair intervals",
+      "timingScope": "One-hour initial + guard-stopped 2418.929938s repair; incomplete",
+      "apiUsd": 0,
+      "estimatedKWh": 0.16719369272222223,
+      "estimatedElectricityUsd": 0.03036237459835556
+    },
+    {
+      "id": "qwen-strata",
+      "label": "Flash-Next / Strata",
+      "seconds": 7103.288,
+      "hours": 1.9731355555555554,
+      "loadSegments": [
+        {
+          "hours": 1.9731355555555554,
+          "watts": 100
+        }
+      ],
+      "basis": "Conservative 100 W whole-box allowance over recorded coding/repair intervals",
+      "timingScope": "One-hour initial + 45-minute repair + 803.226s label follow-up",
+      "apiUsd": 0,
+      "estimatedKWh": 0.19731355555555555,
+      "estimatedElectricityUsd": 0.03583214168888889
+    },
+    {
+      "id": "glm-strata",
+      "label": "GLM-5.3-Flash / Strata",
+      "seconds": 21202.270314216614,
+      "hours": 5.889519531726837,
+      "loadSegments": [
+        {
+          "hours": 5.889519531726837,
+          "watts": 100
+        }
+      ],
+      "basis": "Conservative 100 W whole-box allowance over recorded coding/repair intervals",
+      "timingScope": "Seven coding/recovery/repair phases; end-to-end start-to-freeze 6h28m07s",
+      "apiUsd": 0,
+      "estimatedKWh": 0.5889519531726837,
+      "estimatedElectricityUsd": 0.10695367469615936
+    },
+    {
+      "id": "deepseek-pi",
+      "label": "DeepSeek Flash / Pi",
+      "seconds": 1302.786,
+      "hours": 0.361885,
+      "loadSegments": [
+        {
+          "hours": 0.361885,
+          "watts": 30
+        }
+      ],
+      "basis": "30 W local tools/browser average; model inference hosted by DeepSeek",
+      "timingScope": "1246.224s original + 56.562s title-state repair",
+      "apiUsd": 0.144551202,
+      "estimatedKWh": 0.01085655,
+      "estimatedElectricityUsd": 0.00197154948
+    },
+    {
+      "id": "deepseek-graphify",
+      "label": "DeepSeek Flash / Pi + Graphify",
+      "seconds": 1594.726,
+      "hours": 0.4429794444444445,
+      "loadSegments": [
+        {
+          "hours": 0.4429794444444445,
+          "watts": 30
+        }
+      ],
+      "basis": "30 W local tools/browser average; model inference hosted by DeepSeek",
+      "timingScope": "One fresh game phase; no later repair",
+      "apiUsd": 0.18468558,
+      "estimatedKWh": 0.013289383333333335,
+      "estimatedElectricityUsd": 0.0024133520133333337
+    }
+  ],
+  "includingSeparatePreparation": {
+    "modeledHours": 27.006123125615723,
+    "estimatedKWh": 2.0676051347837947,
+    "estimatedElectricityUsd": 0.37547709247673716,
+    "recordedApiUsd": 0.32923678199999995,
+    "modeledElectricityPlusRecordedApiUsd": 0.7047138744767372
+  },
+  "excludingPotentiallyOverlappingPreparation": {
+    "modeledHours": 19.006123125615726,
+    "estimatedKWh": 1.6276051347837948,
+    "estimatedElectricityUsd": 0.29557309247673713,
+    "recordedApiUsd": 0.32923678199999995,
+    "modeledElectricityPlusRecordedApiUsd": 0.6248098744767371
+  },
+  "preparation3to4ActiveHoursRange": {
+    "estimatedKWh": [
+      0.4,
+      0.48
+    ],
+    "estimatedUsd": [
+      0.07264000000000001,
+      0.087168
+    ]
+  },
+  "hypothetical150WLocalSensitivity": {
+    "phases": [
+      {
+        "id": "preparation",
+        "estimatedKWh": 0.615,
+        "estimatedElectricityUsd": 0.111684
+      },
+      {
+        "id": "qwen27",
+        "estimatedKWh": 1.3,
+        "estimatedElectricityUsd": 0.23608
+      },
+      {
+        "id": "qwen-native",
+        "estimatedKWh": 0.2507905390833334,
+        "estimatedElectricityUsd": 0.04554356189753334
+      },
+      {
+        "id": "qwen-strata",
+        "estimatedKWh": 0.29597033333333334,
+        "estimatedElectricityUsd": 0.05374821253333334
+      },
+      {
+        "id": "glm-strata",
+        "estimatedKWh": 0.8834279297590255,
+        "estimatedElectricityUsd": 0.16043051204423905
+      },
+      {
+        "id": "deepseek-pi",
+        "estimatedKWh": 0.01085655,
+        "estimatedElectricityUsd": 0.00197154948
+      },
+      {
+        "id": "deepseek-graphify",
+        "estimatedKWh": 0.013289383333333335,
+        "estimatedElectricityUsd": 0.0024133520133333337
+      }
+    ],
+    "estimatedKWh": 3.3693347355090255,
+    "estimatedElectricityUsd": 0.6118711879684391,
+    "note": "What-if stress allowance, not measured draw or a certified upper bound. Preparation still uses only 3.5 active hours; hosted workflows remain 30 W locally."
+  },
+  "exclusions": [
+    "Unlogged runtime screens, downloads, independent QA, later article/media work and server idle outside listed windows",
+    "Displays, networking and separate coordinator hardware",
+    "Human effort and hardware purchase/depreciation",
+    "DeepSeek provider energy, which was not measured"
+  ],
+  "timingCaveat": "The eight-hour preparation allowance is user-supplied and may overlap the broad first-Qwen clock. Both totals are reported; neither is the measured full research-project bill.",
+  "sources": {
+    "manufacturer": "https://www.minisforum.com/collections/ai-pcs/products/minisforum-ai-x1-pro",
+    "originalReview": "https://www.notebookcheck.net/Minisforum-AI-X1-Pro-review-An-all-round-mini-PC-for-the-office-multimedia-gaming-and-creative-tasks.973433.0.html",
+    "electricityRate": "https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a"
+  }
+}

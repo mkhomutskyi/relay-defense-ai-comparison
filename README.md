@@ -91,6 +91,10 @@ The UI offers 1–5 stars for overall quality and optional visuals, gameplay/fun
 
 Production requires a D1 database, the real database binding, allowed public origin, deployment/rate-limit configuration and `site/config.json` pointing to the API base. No credentials are shipped. Current disabled-state messaging explicitly says shared votes are not connected. See [deployment notes](docs/DEPLOYMENT.md) and [rating privacy](site/privacy.html).
 
+## Estimated electricity
+
+The current mixed-load illustration budgets 100 W for local coding, 75 W for the first broad Qwen window, 30 W for hosted-workflow tools and 20 W for light preparation. At 18.16 cents/kWh, the listed periods plus a separate eight-hour preparation allowance total about **2.07 kWh / $0.38 electricity**. If that allowance overlaps the first Qwen clock, the alternative is **1.63 kWh / $0.30**. These are assumptions, not wall-meter measurements or the complete research bill. The two recorded DeepSeek API charges add $0.3292 separately. See [power evidence, per-phase estimates and scope](docs/ELECTRICITY.md).
+
 ## Media, credits and experiment scope
 
 Selected screenshots and clips come from actual browser execution. Silent clips/GIFs do not establish sound quality or client FPS. My ranking is separate from public reader feedback. Codex prepared the comparison UI, rating service, packaging and article graphics; the tested models authored the game implementations.

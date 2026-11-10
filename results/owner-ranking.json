@@ -158,5 +158,7 @@
     "basis": "US residential monthly average, August 2026; EIA October 23 release; latest published as checked November 9, not an individual current tariff",
     "url": "https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a"
   },
-  "energyScope": "50/75/100W are assumed whole-box sensitivity scenarios, not wall-meter observations or confidence bounds. Applied only to listed intervals; excludes setup/downloads/benchmarks/inter-phase gaps except included in27B wall span, later QA, ongoing server idle and cloud-provider electricity. API spend excludes coordinator compute and labor. Local zero API entries exclude outside coordination too."
+  "energyScope": "50/75/100W are assumed whole-box sensitivity scenarios, not wall-meter observations or confidence bounds. Applied only to listed intervals; excludes setup/downloads/benchmarks/inter-phase gaps except included in27B wall span, later QA, ongoing server idle and cloud-provider electricity. API spend excludes coordinator compute and labor. Local zero API entries exclude outside coordination too.",
+  "currentElectricityEstimate": "electricity-estimate.json",
+  "electricityScenarioNote": "Original uniform-power scenarios are retained as historical illustrations. The article now uses the separately documented mixed-load estimate; measured times, API bills and rankings are unchanged."
 }
