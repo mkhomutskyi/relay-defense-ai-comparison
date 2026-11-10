@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Relay Defense — Solar Relay Outpost</title>
+</head>
+
+<body>
+    <div id="app">
+        <header id="toolbar">
+            <span id="brand">RELAY DEFENSE</span>
+            <span id="toolbar-note">solar relay outpost · original procedural art &amp; audio</span>
+            <div id="controls">
+                <button id="start-btn" type="button">Start</button>
+                <button id="pause-btn" type="button">Pause</button>
+                <button id="speed-btn" type="button">Speed 1x</button>
+                <button id="mute-btn" type="button">Mute</button>
+                <button id="restart-btn" type="button">Restart</button>
+            </div>
+        </header>
+        <div id="game-container"></div>
+        <footer id="hint">click a build pad then an empty cell · P pause · F speed · M mute · R restart · Space sends the next wave · V fullscreen</footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

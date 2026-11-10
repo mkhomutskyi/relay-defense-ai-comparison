@@ -1,0 +1,3 @@
+import {spawnSync}from'node:child_process';import fs from'node:fs';import path from'node:path';
+const root=process.cwd();const games=JSON.parse(fs.readFileSync('site/games.json','utf8'));const out={};
+for(const g of games){const cwd=path.join(root,'games',g.id);const tsc=spawnSync(process.execPath,['node_modules/typescript/bin/tsc','--noEmit'],{cwd,encoding:'utf8'});if(tsc.status!==0&&g.id!=='qwen-native')throw Error(tsc.stdout+tsc.stderr);const vite=spawnSync(process.execPath,['node_modules/vite/bin/vite.js','build','--base=./','--outDir',path.join(root,'site/games',g.id)],{cwd,encoding:'utf8'});if(vite.status!==0)throw Error(vite.stdout+vite.stderr);out[g.id]={typecheck:tsc.status,bundle:vite.status};console.log(g.id,JSON.stringify(out[g.id]))}

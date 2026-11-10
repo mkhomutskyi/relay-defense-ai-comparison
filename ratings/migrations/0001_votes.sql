@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS votes (
+ game TEXT NOT NULL,
+ version TEXT NOT NULL,
+ voter TEXT NOT NULL,
+ overall INTEGER NOT NULL CHECK(overall BETWEEN 1 AND 5),
+ visuals INTEGER CHECK(visuals BETWEEN 1 AND 5),
+ fun INTEGER CHECK(fun BETWEEN 1 AND 5),
+ sound INTEGER CHECK(sound BETWEEN 1 AND 5),
+ updated_at INTEGER NOT NULL,
+ PRIMARY KEY(game,version,voter)
+);

@@ -1,0 +1,88 @@
+:root {
+    --sand: #efe3c8;
+    --slate: #27313c;
+    --amber: #ffd166;
+    --ink: #f4f1e8;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #1c242e;
+    color: var(--ink);
+    font-family: 'Trebuchet MS', Verdana, sans-serif;
+}
+
+#app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#toolbar {
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--slate);
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+#brand {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: var(--amber);
+    font-weight: 700;
+}
+
+#toolbar-note {
+    font-size: 12px;
+    color: #a9b6c4;
+    flex: 1;
+}
+
+#controls {
+    display: flex;
+    gap: 8px;
+}
+
+#controls button {
+    background: #3c4450;
+    color: var(--ink);
+    border: 1px solid #525c69;
+    border-radius: 6px;
+    padding: 7px 12px;
+    font: inherit;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#controls button:hover { background: #46515e; }
+#controls button:active { transform: translateY(1px); }
+#controls button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    background: #333b45;
+}
+
+#game-container {
+    width: 1024px;
+    line-height: 0;
+}
+
+#game-container canvas {
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+#hint {
+    width: 1024px;
+    font-size: 12px;
+    color: #a9b6c4;
+}

@@ -1,0 +1,134 @@
+/* Relay Defense — layout & HUD theme.
+   One centering authority: #app flex-centers the column; #game-container is a
+   plain block that Phaser fills, so autoCenter margins can no longer double-shift. */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #e8d9b5; /* bright sand */
+}
+
+/* Neutralize inherited dark theme + flex centering on #app (overrides /style.css). */
+#app {
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  background: #e8d9b5;
+}
+
+/* Single column, map dominates the window. */
+#app > * {
+  width: min(100%, 1280px);
+}
+
+.relay-panel {
+  flex: 0 0 auto;
+  order: -1;
+  max-height: 34vh;
+  overflow-y: auto;
+  padding: 6px 12px;
+  background: #12312e; /* dark teal ink */
+  color: #f5e6c8;
+  border-bottom: 2px solid #0b6e64;
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.relay-panel h1 {
+  margin: 0 0 2px;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}
+
+.relay-mode { font-weight: bold; margin-bottom: 2px; color: #7fe3d6; }
+.relay-stat { display: inline-block; margin-right: 14px; }
+.relay-help { font-size: 12px; color: #cfe8e2; margin: 3px 0; }
+
+.relay-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 4px 0;
+  align-items: center;
+}
+
+/* Dark ink/teal controls, coral reserved for threats (canvas side). */
+.relay-btn {
+  padding: 5px 12px;
+  background: #0b6e64;
+  color: #f7efdc;
+  border: 1px solid #0a8f80;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+}
+.relay-btn:hover:not(:disabled) { background: #0e8a7c; }
+.relay-btn:active:not(:disabled) { background: #095a52; }
+.relay-btn:disabled { opacity: 0.45; cursor: default; }
+
+#start-game, #continue-game {
+  background: #b3402f; /* coral accent for primary actions */
+  border-color: #d15a47;
+}
+#start-game:hover:not(:disabled), #continue-game:hover:not(:disabled) { background: #c9503e; }
+
+.relay-tower-info { font-size: 12px; color: #cfe8e2; margin: 4px 0; min-height: 16px; }
+.relay-audio input[type="range"] { width: 90px; accent-color: #0b6e64; }
+
+/* Map area: plain block (NO flex) so Phaser autoCenter margins are the only
+   transform in play and the canvas stays centered by that single authority. */
+#game-container {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  background: #d9c69a;
+}
+#game-container canvas {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+/* Mode-driven control visibility (body[data-mode] set by renderer). */
+body[data-mode="title"] #next-wave,
+body[data-mode="title"] #pause,
+body[data-mode="title"] [data-testid^="tower-btn"],
+body[data-mode="title"] #upgrade-tower,
+body[data-mode="title"] #sell-tower,
+body[data-mode="title"] #restart-game,
+body[data-mode="title"] #speed-control { display: none; }
+
+body[data-mode="playing"] #start-game,
+body[data-mode="playing"] #continue-game { display: none; }
+
+body[data-mode="paused"] #next-wave,
+body[data-mode="paused"] [data-testid^="tower-btn"],
+body[data-mode="paused"] #upgrade-tower,
+body[data-mode="paused"] #sell-tower { display: none; }
+
+body[data-mode="victory"] #start-game,
+body[data-mode="victory"] #continue-game,
+body[data-mode="victory"] #next-wave,
+body[data-mode="victory"] [data-testid^="tower-btn"],
+body[data-mode="victory"] #upgrade-tower,
+body[data-mode="victory"] #sell-tower { display: none; }
+
+body[data-mode="defeat"] #start-game,
+body[data-mode="defeat"] #continue-game,
+body[data-mode="defeat"] #next-wave,
+body[data-mode="defeat"] [data-testid^="tower-btn"],
+body[data-mode="defeat"] #upgrade-tower,
+body[data-mode="defeat"] #sell-tower { display: none; }
+
+/* Pause/Restart/audio stay visible in every mode. */

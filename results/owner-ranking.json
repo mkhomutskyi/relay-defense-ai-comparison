@@ -1,0 +1,162 @@
+{
+  "date": "2026-11-09",
+  "scope": "Owner preference for six saved artifacts; different prompts/repair histories; not a causal model ranking",
+  "results": [
+    {
+      "place": 1,
+      "id": "deepseek-graphify",
+      "name": "DeepSeek Flash + Pi + Graphify",
+      "seconds": 1594.726,
+      "scope": "One fresh game phase; no later repair",
+      "api_usd": 0.18468558,
+      "electricity_scenarios": {
+        "50": {
+          "assumed_whole_box_W": 50,
+          "kWh": 0.022148972222222226,
+          "usd": 0.004022253355555556
+        },
+        "75": {
+          "assumed_whole_box_W": 75,
+          "kWh": 0.03322345833333333,
+          "usd": 0.006033380033333333
+        },
+        "100": {
+          "assumed_whole_box_W": 100,
+          "kWh": 0.04429794444444445,
+          "usd": 0.008044506711111113
+        }
+      }
+    },
+    {
+      "place": 2,
+      "id": "deepseek-pi",
+      "name": "DeepSeek Flash + Pi",
+      "seconds": 1302.786,
+      "scope": "1246.224s original + 56.562s title-state repair",
+      "api_usd": 0.144551202,
+      "electricity_scenarios": {
+        "50": {
+          "assumed_whole_box_W": 50,
+          "kWh": 0.018094250000000003,
+          "usd": 0.0032859158000000006
+        },
+        "75": {
+          "assumed_whole_box_W": 75,
+          "kWh": 0.027141375,
+          "usd": 0.0049288737
+        },
+        "100": {
+          "assumed_whole_box_W": 100,
+          "kWh": 0.036188500000000005,
+          "usd": 0.006571831600000001
+        }
+      }
+    },
+    {
+      "place": 3,
+      "id": "qwen-strata",
+      "name": "Qwen3.8-Flash-Next IQ2_XS + Strata + Pi",
+      "seconds": 7103.288,
+      "scope": "One-hour initial + 45-minute repair + 803.226s label follow-up",
+      "api_usd": 0,
+      "electricity_scenarios": {
+        "50": {
+          "assumed_whole_box_W": 50,
+          "kWh": 0.09865677777777777,
+          "usd": 0.017916070844444444
+        },
+        "75": {
+          "assumed_whole_box_W": 75,
+          "kWh": 0.14798516666666664,
+          "usd": 0.026874106266666663
+        },
+        "100": {
+          "assumed_whole_box_W": 100,
+          "kWh": 0.19731355555555555,
+          "usd": 0.03583214168888889
+        }
+      }
+    },
+    {
+      "place": 4,
+      "id": "glm-strata",
+      "name": "GLM-5.3-Flash + Strata + Pi",
+      "seconds": 21202.270314216614,
+      "scope": "Seven coding/recovery/repair phases; end-to-end start-to-freeze 6h28m07s",
+      "api_usd": 0,
+      "electricity_scenarios": {
+        "50": {
+          "assumed_whole_box_W": 50,
+          "kWh": 0.2944759765863419,
+          "usd": 0.05347683734807969
+        },
+        "75": {
+          "assumed_whole_box_W": 75,
+          "kWh": 0.44171396487951275,
+          "usd": 0.08021525602211953
+        },
+        "100": {
+          "assumed_whole_box_W": 100,
+          "kWh": 0.5889519531726838,
+          "usd": 0.10695367469615938
+        }
+      }
+    },
+    {
+      "place": 5,
+      "id": "qwen-native",
+      "name": "Qwen3.8-Flash-Next IQ2_XS + LM Studio Vulkan + Pi",
+      "seconds": 6018.972938000001,
+      "scope": "One-hour initial + guard-stopped 2418.929938s repair; incomplete",
+      "api_usd": 0,
+      "electricity_scenarios": {
+        "50": {
+          "assumed_whole_box_W": 50,
+          "kWh": 0.08359684636111112,
+          "usd": 0.01518118729917778
+        },
+        "75": {
+          "assumed_whole_box_W": 75,
+          "kWh": 0.1253952695416667,
+          "usd": 0.02277178094876667
+        },
+        "100": {
+          "assumed_whole_box_W": 100,
+          "kWh": 0.16719369272222223,
+          "usd": 0.03036237459835556
+        }
+      }
+    },
+    {
+      "place": 6,
+      "id": "qwen27",
+      "name": "Qwen3.8-27B Q4_K_M + LM Studio Vulkan + Pi",
+      "seconds": 31200,
+      "scope": "Approximate start-to-final-freeze wall span; includes interventions and gaps; not a Pi-only clock",
+      "api_usd": 0,
+      "electricity_scenarios": {
+        "50": {
+          "assumed_whole_box_W": 50,
+          "kWh": 0.43333333333333335,
+          "usd": 0.07869333333333334
+        },
+        "75": {
+          "assumed_whole_box_W": 75,
+          "kWh": 0.65,
+          "usd": 0.11804
+        },
+        "100": {
+          "assumed_whole_box_W": 100,
+          "kWh": 0.8666666666666667,
+          "usd": 0.15738666666666667
+        }
+      }
+    }
+  ],
+  "electricityRate": {
+    "usd_per_kWh": 0.1816,
+    "basis": "US residential monthly average, August 2026; EIA October 23 release; latest published as checked November 9, not an individual current tariff",
+    "url": "https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a"
+  },
+  "energyScope": "50/75/100W are assumed whole-box sensitivity scenarios, not wall-meter observations or confidence bounds. Applied only to listed intervals; excludes setup/downloads/benchmarks/inter-phase gaps except included in27B wall span, later QA, ongoing server idle and cloud-provider electricity. API spend excludes coordinator compute and labor. Local zero API entries exclude outside coordination too."
+}

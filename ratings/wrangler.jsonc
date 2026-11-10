@@ -1,0 +1,9 @@
+{
+ "$schema":"node_modules/wrangler/config-schema.json",
+ "name":"relay-defense-ratings",
+ "main":"worker.js",
+ "compatibility_date":"2026-11-09",
+ "assets":{"directory":"../site","binding":"ASSETS","run_worker_first":["/api/*"]},
+ "vars":{"ALLOWED_ORIGINS":"http://localhost:5220,http://127.0.0.1:5220"},
+ "d1_databases":[{"binding":"DB","database_name":"relay-defense-ratings","database_id":"00000000-0000-0000-0000-000000000000","migrations_dir":"migrations"}]
+}

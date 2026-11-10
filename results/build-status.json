@@ -1,0 +1,32 @@
+{
+  "deepseek-graphify": {
+    "typecheckExitCode": 0,
+    "staticBundleExitCode": 0,
+    "note": "Original source passes typecheck"
+  },
+  "deepseek-pi": {
+    "typecheckExitCode": 0,
+    "staticBundleExitCode": 0,
+    "note": "Original source passes typecheck"
+  },
+  "glm-strata": {
+    "typecheckExitCode": 0,
+    "staticBundleExitCode": 0,
+    "note": "Original source passes typecheck"
+  },
+  "qwen-native": {
+    "typecheckExitCode": 1,
+    "staticBundleExitCode": 0,
+    "note": "Historical unused bakeBackground method; Vite emission preserves the incomplete artifact without a game fix"
+  },
+  "qwen-strata": {
+    "typecheckExitCode": 0,
+    "staticBundleExitCode": 0,
+    "note": "Original source passes typecheck"
+  },
+  "qwen27": {
+    "typecheckExitCode": 0,
+    "staticBundleExitCode": 0,
+    "note": "Original source passes typecheck"
+  }
+}
