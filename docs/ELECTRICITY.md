@@ -16,6 +16,14 @@ MINISFORUM specifies a 135 W internal power supply for the AI X1 Pro. The supply
 
 These are assumptions, not measurements of each phase's duty cycle. Fan noise indicates cooling activity but does not quantify wall power. Use a meter for an actual bill. No new stress or model test was run to create this estimate.
 
+## Hosted inference still uses local electricity
+
+The DeepSeek rows include local electricity for Pi, file/shell tools, builds and browser checks on the AMD server. The 30 W whole-box average is an assumption, not a measurement of Pi alone or a Raspberry Pi power figure. Each hosted workflow is about 0.2 cents in estimated local electricity; its recorded API charge is additional. DeepSeek's server electricity is not measured in this experiment.
+
+Hosted inference does not require a local AI GPU, downloaded model weights or 64 GB of model memory. Reuse an existing computer where possible; this task does not by itself require an AI-hardware purchase. A container with 2 vCPUs and 2 GB RAM is a reasonable initial allocation for Pi calling the API, not a published minimum or a configuration tested here. Project builds, Graphify indexing and browser automation may require more CPU, RAM or storage.
+
+A suitable 64-bit Raspberry Pi should also be a viable API client, directly or inside a compatible Linux container. This is an architecture inference from [Pi's documented Node.js/Linux setup](https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/quickstart.md) and [64-bit Raspberry Pi OS support](https://www.raspberrypi.com/documentation/computers/os.html), not a completed Raspberry Pi benchmark. Install a compatible Node.js version and ARM64 project tools. No identical end-to-end speed or Raspberry Pi electricity cost is claimed.
+
 ## Calculation
 
 ```text

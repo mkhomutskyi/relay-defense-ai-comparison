@@ -95,6 +95,8 @@ Production requires a D1 database, the real database binding, allowed public ori
 
 The current mixed-load illustration budgets 100 W for local coding, 75 W for the first broad Qwen window, 30 W for hosted-workflow tools and 20 W for light preparation. At 18.16 cents/kWh, the listed periods plus a separate eight-hour preparation allowance total about **2.07 kWh / $0.38 electricity**. If that allowance overlaps the first Qwen clock, the alternative is **1.63 kWh / $0.30**. These are assumptions, not wall-meter measurements or the complete research bill. The two recorded DeepSeek API charges add $0.3292 separately. See [power evidence, per-phase estimates and scope](docs/ELECTRICITY.md).
 
+DeepSeek still uses local electricity: the estimate includes the AMD box running Pi, tools, builds and browser tests at an assumed 30 W. Hosted inference needs no local AI accelerator or model weights, so an existing computer can avoid an AI-hardware purchase. For Pi's API-client role, 2 vCPUs / 2 GB RAM is a suggested starting allocation, not a tested minimum. A suitable 64-bit Raspberry Pi or Linux container on it is a plausible client host; builds, Graphify and browser automation may need more resources. These smaller setups were not benchmarked. See [client sizing and evidence](docs/ELECTRICITY.md#hosted-inference-still-uses-local-electricity).
+
 ## Media, credits and experiment scope
 
 Selected screenshots and clips come from actual browser execution. Silent clips/GIFs do not establish sound quality or client FPS. My ranking is separate from public reader feedback. Codex prepared the comparison UI, rating service, packaging and article graphics; the tested models authored the game implementations.
