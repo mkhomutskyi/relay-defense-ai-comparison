@@ -11,8 +11,9 @@ Assume **30 W for the whole AMD development host** during all listed active agen
 |Qwen / cloud|31m32s|30|0.01577|0.286|
 |Original Inkling / local RTX 5090 + AMD tools|56m58s|280|0.26582|4.827|
 |GLM / cloud|13m18s|30|0.00665|0.121|
+|MiniMax / cloud|30m00s|30|0.01500|0.272|
 
-Together these scenarios give about **0.314 kWh / 5.7 cents** for the listed active time. They exclude preparation, downloads, independent review, idle periods, unscored calibration and cloud-provider electricity. Hardware, API fees and human effort are additional. This is not the complete experiment's energy bill.
+Together these scenarios give about **0.329 kWh / 6.0 cents** for the listed active time. They exclude preparation, downloads, independent review, idle periods, unscored calibration and cloud-provider electricity. Hardware, API fees and human effort are additional. This is not the complete experiment's energy bill.
 
 Formula: `active_seconds / 3600 * assumed_watts / 1000 * dollars_per_kWh`.
 

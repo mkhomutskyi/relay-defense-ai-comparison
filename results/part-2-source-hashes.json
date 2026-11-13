@@ -413,5 +413,96 @@
     "capturedSha256": "9f01b1276a086b311f70f07aa5e3809ca621d090d8b9a4e01f6d7a444d0c4a9c",
     "sha256": "9f01b1276a086b311f70f07aa5e3809ca621d090d8b9a4e01f6d7a444d0c4a9c",
     "bytes": 2454
+  },
+  "games/part-2/p2-minimax/index.html": {
+    "capturedSha256": "5884e38d7f31b54380a708dc41194b5ce3cbfdf0ad9879b486787ce92a3a0689",
+    "sha256": "5884e38d7f31b54380a708dc41194b5ce3cbfdf0ad9879b486787ce92a3a0689",
+    "bytes": 560
+  },
+  "games/part-2/p2-minimax/LICENSE": {
+    "capturedSha256": "2280b0fc1261427dd55f810ddffcfd7409428318250040ba880b3afe91c25c57",
+    "sha256": "2280b0fc1261427dd55f810ddffcfd7409428318250040ba880b3afe91c25c57",
+    "bytes": 1074
+  },
+  "games/part-2/p2-minimax/package.json": {
+    "capturedSha256": "8ba29875a36cad71fe180073e99c0f38727f9c5ce08f1b5201906d4e54fc4e56",
+    "sha256": "8ba29875a36cad71fe180073e99c0f38727f9c5ce08f1b5201906d4e54fc4e56",
+    "bytes": 293
+  },
+  "games/part-2/p2-minimax/tsconfig.json": {
+    "capturedSha256": "92ed554099eae269d86bb720ee7b14b5c748955a82542e7630d3df1ec4054fb0",
+    "sha256": "92ed554099eae269d86bb720ee7b14b5c748955a82542e7630d3df1ec4054fb0",
+    "bytes": 748
+  },
+  "games/part-2/p2-minimax/src/main.ts": {
+    "capturedSha256": "c0ed3b3d88bfa53ee69e08e037883c3e10888035484b43533d6e119d0edfebf7",
+    "sha256": "c0ed3b3d88bfa53ee69e08e037883c3e10888035484b43533d6e119d0edfebf7",
+    "bytes": 505
+  },
+  "games/part-2/p2-minimax/src/vite-env.d.ts": {
+    "capturedSha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "bytes": 38
+  },
+  "games/part-2/p2-minimax/src/game/audio.ts": {
+    "capturedSha256": "9600a055b453193fd744eaba3b7a9c8ddb057f380dadc82ebce89b297b26bd2e",
+    "sha256": "9600a055b453193fd744eaba3b7a9c8ddb057f380dadc82ebce89b297b26bd2e",
+    "bytes": 7820
+  },
+  "games/part-2/p2-minimax/src/game/config.ts": {
+    "capturedSha256": "306b66e948f660a8f17bd1086b7f48775d20d85ad5dc178373957632916e8cdc",
+    "sha256": "306b66e948f660a8f17bd1086b7f48775d20d85ad5dc178373957632916e8cdc",
+    "bytes": 6495
+  },
+  "games/part-2/p2-minimax/src/game/main.ts": {
+    "capturedSha256": "80b2179c8178baaf3073cb94827a3fd9078aa516d9e4f1b32da25193cb7c1674",
+    "sha256": "80b2179c8178baaf3073cb94827a3fd9078aa516d9e4f1b32da25193cb7c1674",
+    "bytes": 2209
+  },
+  "games/part-2/p2-minimax/src/game/mapArt.ts": {
+    "capturedSha256": "e128785d5e53910f5c0b1c79da4153cbb34c9a476eb029d1afbd917352c08772",
+    "sha256": "e128785d5e53910f5c0b1c79da4153cbb34c9a476eb029d1afbd917352c08772",
+    "bytes": 10783
+  },
+  "games/part-2/p2-minimax/src/game/path.ts": {
+    "capturedSha256": "ddfb866245fab9283d76630d042c4cb88ab43b06e5628965e6434b9e89bd8607",
+    "sha256": "ddfb866245fab9283d76630d042c4cb88ab43b06e5628965e6434b9e89bd8607",
+    "bytes": 1793
+  },
+  "games/part-2/p2-minimax/src/game/textures.ts": {
+    "capturedSha256": "a8a5afa5af88b24ade677ce376d0376b966752e6ab8a06de9a90548ea0ef3138",
+    "sha256": "a8a5afa5af88b24ade677ce376d0376b966752e6ab8a06de9a90548ea0ef3138",
+    "bytes": 13869
+  },
+  "games/part-2/p2-minimax/src/game/ui.ts": {
+    "capturedSha256": "d1387c04011861c0fc475f2c9643288717cc28fae962b4035207a9f041de0d4a",
+    "sha256": "d1387c04011861c0fc475f2c9643288717cc28fae962b4035207a9f041de0d4a",
+    "bytes": 4662
+  },
+  "games/part-2/p2-minimax/src/game/scenes/GameScene.ts": {
+    "capturedSha256": "168b06bbf14513c08a715569c409f6b9a6b8c077073e96ee185d2152aa9ea8cb",
+    "sha256": "168b06bbf14513c08a715569c409f6b9a6b8c077073e96ee185d2152aa9ea8cb",
+    "bytes": 41525
+  },
+  "games/part-2/p2-minimax/src/game/scenes/MenuScene.ts": {
+    "capturedSha256": "713c504e2843218005b8d0ff001bcc7793f9c37d39eb308419cafd179450eef9",
+    "sha256": "713c504e2843218005b8d0ff001bcc7793f9c37d39eb308419cafd179450eef9",
+    "bytes": 5431
+  },
+  "games/part-2/p2-minimax/public/favicon.png": {
+    "capturedSha256": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "sha256": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "bytes": 354
+  },
+  "games/part-2/p2-minimax/public/style.css": {
+    "capturedSha256": "54c1e0508c68ff423a859af857273bce442887a92005f22b6926c52bc9304d86",
+    "sha256": "54c1e0508c68ff423a859af857273bce442887a92005f22b6926c52bc9304d86",
+    "bytes": 531
+  },
+  "games/part-2/p2-minimax/package-lock.json": {
+    "capturedSha256": "2826c0662c52ce97da153633df5cbef6e6d81777db97563c2cb2641bcf3c8d86",
+    "sha256": "2826c0662c52ce97da153633df5cbef6e6d81777db97563c2cb2641bcf3c8d86",
+    "bytes": 38364,
+    "provenance": "Existing lockfile from the identical pinned toolchain; packaging only"
   }
 }

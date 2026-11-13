@@ -40,8 +40,15 @@
       "assumedWholeSystemWatts": 30,
       "modeledKWh": 0.006646241666666667,
       "modeledCostUSD": 0.0012069574866666669
+    },
+    {
+      "id": "p2-minimax",
+      "activeSeconds": 1799.827,
+      "assumedWholeSystemWatts": 30,
+      "modeledKWh": 0.014998558333333334,
+      "modeledCostUSD": 0.0027237381933333336
     }
   ],
-  "totalKWh": 0.3136179777777778,
-  "totalCostUSD": 0.05695302476444444
+  "totalKWh": 0.3286165361111111,
+  "totalCostUSD": 0.05967676295777778
 }

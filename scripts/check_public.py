@@ -76,7 +76,7 @@ def main():
     part2_sources = json.loads((ROOT / "results/part-2-source-hashes.json").read_text(encoding="utf-8"))
     part2_builds = json.loads((ROOT / "results/part-2-builds.json").read_text(encoding="utf-8"))["files"]
     part2_media = json.loads((ROOT / "results/part-2-media.json").read_text(encoding="utf-8"))["gifs"]
-    if len(part2) != 5 or len({g["id"] for g in part2}) != 5:
+    if len(part2) != 6 or len({g["id"] for g in part2}) != 6:
         findings.append({"file": "site/part-2/games.json", "rule": "part2-catalog"})
     for rel, values in part2_sources.items():
         p = ROOT / rel

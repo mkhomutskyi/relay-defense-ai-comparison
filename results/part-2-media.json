@@ -99,6 +99,26 @@
       "resourceGrants": false,
       "timeHookUsed": false,
       "kind": "gameplay capture"
+    },
+    {
+      "id": "p2-minimax",
+      "file": "site/part-2/media/p2-minimax.gif",
+      "sha256": "1432868c3505f007b3084ff2d8943cfc1a0257ba7a70b31d0bda13f917d25982",
+      "source": "site/part-2/media/p2-minimax.mp4",
+      "sourceSha256": "9d06b5d72df43fa97ec24baae74a30e1273c259f517f917de7ea7ccfb106f867",
+      "rawRecordingSha256": "ec6ad9da95b2e071b8ed409aef599a0c160d4ecd23b8812784f1e04d5ba3b13b",
+      "rawExcerptSeconds": [
+        8,
+        16
+      ],
+      "excerptSeconds": [
+        0,
+        8
+      ],
+      "normalTime": true,
+      "resourceGrants": false,
+      "timeHookUsed": false,
+      "kind": "gameplay capture"
     }
   ]
 }

@@ -19,6 +19,6 @@ Screenshots and gameplay recordings are genuine observations. The cover is an AI
 
 ## Part 2
 
-The five new game source trees retain their Phaser/template licenses. Canonical cloud IDs and the original local Inkling publisher/filename are listed in [Part2 methods](part-2/METHODS.md). No model weights or private sessions are distributed. The selected models authored the games through Pi; setup, packaging, independent checks and editorial assets used outside assistance.
+The six new game source trees retain their Phaser/template licenses. Canonical cloud IDs and the original local Inkling publisher/filename are listed in [Part2 methods](part-2/METHODS.md). No model weights or private sessions are distributed. The selected models authored the games through Pi; setup, packaging, independent checks and editorial assets used outside assistance.
 
-The new cover is an AI-assisted editorial illustration made after testing, not an actual game frame or hardware photo. The workflow diagram is a native editorial SVG. All five Part2 GIFs/videos are real continuous eight-second recordings without time-hook acceleration or resource grants; the native Inkling clip is explicitly a failure capture. [Media hashes](../results/part-2-media.json).
+The new cover is an AI-assisted editorial illustration made after testing, not an actual game frame or hardware photo. The workflow diagram is a native editorial SVG. All six Part2 GIFs/videos are real continuous eight-second recordings without time-hook acceleration or resource grants; the native Inkling clip is explicitly a failure capture. [Media hashes](../results/part-2-media.json).

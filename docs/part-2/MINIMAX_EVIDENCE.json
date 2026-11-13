@@ -1,0 +1,131 @@
+{
+  "model": "minimax-m3.1-flash",
+  "publisher": "MiniMax",
+  "provider": "Ollama Cloud",
+  "agent": "Pi 1.5.0",
+  "development": "AMD Ryzen AI 9 HX 370 container; inference hosted",
+  "activeSeconds": 1799.827,
+  "phases": [
+    {
+      "name": "first pass",
+      "active_seconds": 1079.787,
+      "billed_usd": 0.21168,
+      "termination": "Spend guard blocked next request before a normal final reply",
+      "qa": "Runtime Phaser reference error; upgrade/control failures; first-pass artifact preserved"
+    },
+    {
+      "name": "one factual repair",
+      "active_seconds": 720.04,
+      "billed_usd": 0.10188,
+      "driver_phase": "deadline",
+      "stop_reason": "error",
+      "error": "This operation was aborted"
+    }
+  ],
+  "admittedHTTPRequests": 208,
+  "additionalProviderBilledRequests": 207,
+  "observedBilledUSD": 0.31356,
+  "billingFullyReconciled": false,
+  "unresolvedReservationUSD": 0.16711679999999998,
+  "checks": [
+    {
+      "name": "start",
+      "passed": true
+    },
+    {
+      "name": "paid-placement",
+      "passed": true
+    },
+    {
+      "name": "paid-upgrade",
+      "passed": true
+    },
+    {
+      "name": "overspend-upgrade-rejected",
+      "passed": true
+    },
+    {
+      "name": "sale-refund",
+      "passed": true
+    },
+    {
+      "name": "overspend-placement-rejected",
+      "passed": true
+    },
+    {
+      "name": "pause-freezes-real-hook",
+      "passed": true
+    },
+    {
+      "name": "speed-button",
+      "passed": true
+    },
+    {
+      "name": "speed-3x",
+      "passed": true
+    },
+    {
+      "name": "speed-back-to-1x",
+      "passed": true
+    },
+    {
+      "name": "mute",
+      "passed": true
+    },
+    {
+      "name": "unmute",
+      "passed": true
+    },
+    {
+      "name": "mid-game-restart",
+      "passed": true
+    },
+    {
+      "name": "road-placement-rejected",
+      "passed": true
+    },
+    {
+      "name": "enter-start",
+      "passed": true
+    },
+    {
+      "name": "undefended-defeat",
+      "passed": true
+    },
+    {
+      "name": "loss-restart",
+      "passed": true
+    },
+    {
+      "name": "six-wave-victory",
+      "passed": true
+    },
+    {
+      "name": "win-restart",
+      "passed": true
+    },
+    {
+      "name": "phone-canvas-fits",
+      "passed": true
+    }
+  ],
+  "browserErrors": [],
+  "sourceUnchangedDuringQA": true,
+  "campaign": {
+    "phase": "won",
+    "wave": 6,
+    "waveTotal": 6,
+    "kills": 123,
+    "coreHp": 20,
+    "coreHpMax": 20,
+    "leaked": 0
+  },
+  "ownerStars": null,
+  "humanSoundReview": "pending",
+  "phone": "Canvas fits; tiny landscape UI. Desktop recommended.",
+  "privateArchiveSHA256": {
+    "firstPass": "4e9bbd9c508b5f9ee09a5f908eb35e243171fe622fd842a952f9da6cfee37c90",
+    "final": "db1b26ec0c3bf358b51ed5d3116b142d0333b78ddb5ed42e8935f99d2e035464"
+  },
+  "media": "Eight-second normal-time capture; no resource grants or time hooks; see media manifest"
+}

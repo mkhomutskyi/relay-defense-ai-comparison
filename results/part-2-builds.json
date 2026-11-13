@@ -26,6 +26,11 @@
     "site/part-2/games/p2-inkling-local/assets/index-C1AfAegJ.js": "b49dab24805b6919c5923a8aa4dd6cc0b1985420a96db1c25f298ef0393a7118",
     "site/part-2/games/p2-inkling-local/assets/logo.png": "cc15da4ad8d0aacd84e8f7a1990b0ff7ecaf39646f4f6b9c296a183aad2e9076",
     "site/part-2/games/p2-glm/assets/index-Dd6_zzez.js": "b63f6bee6cf85828c44ca45d0139668a97c6bc0e68b5165dd817503463425e15",
-    "site/part-2/games/p2-deepseek/assets/index-USQk-N4T.js": "9a248610db3383646177eb0ec50cbe03fcb062075049fd2e3ed324de8acc61d5"
-  }
+    "site/part-2/games/p2-deepseek/assets/index-USQk-N4T.js": "9a248610db3383646177eb0ec50cbe03fcb062075049fd2e3ed324de8acc61d5",
+    "site/part-2/games/p2-minimax/favicon.png": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "site/part-2/games/p2-minimax/index.html": "7d09168f374572441c925265a2fd92a5223f71b6fa9d5e1634b85057718209ff",
+    "site/part-2/games/p2-minimax/style.css": "54c1e0508c68ff423a859af857273bce442887a92005f22b6926c52bc9304d86",
+    "site/part-2/games/p2-minimax/assets/index-DyQzu7ng.js": "59c746e1543ffc6a890cd1afb0724aea88c2274734356f301481f5ac23eafd0c"
+  },
+  "minimax": "Previously built and browser-tested on AMD; copied byte-for-byte from sealed final evidence"
 }

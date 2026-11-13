@@ -1,15 +1,15 @@
 {
   "cover": {
     "file": "site/part-2/media/cover-part2.png",
-    "sha256": "e69ec2d1ce162f5c4a7c503b938c721ee64dedc4b193fc0dabe23d5d618eace5",
+    "sha256": "ffaed3c2d657339df02ad903dc595f74d70cda6672a50b380c93d890654d7d57",
     "kind": "AI-assisted editorial illustration created after tests; not a game screenshot, hardware photo or game asset",
     "style": "Approved white/blue/black/yellow sketch style"
   },
   "workflow": {
     "file": "site/part-2/media/workflow-part2.png",
-    "sha256": "ea24b5f6cbe9e23349d5dd229ce9570ecc4445220794df9eebc433f095fda9d6",
+    "sha256": "f43db6f4af250f936b6f1a825a0c775fb1e4b630f4dda0514d1362bc4244dd58",
     "source": "site/part-2/media/workflow-part2.svg",
-    "sourceSha256": "10bdd656f5d95bc147286ecffbcb2d625d1bc02a298a7d63f08ebea4f3ce7585",
+    "sourceSha256": "864ab85fd54605d13e1d409f0932168c540527db849007f9ab8eb1b62eeae7e2",
     "kind": "Native editorial SVG, rendered on AMD; not a measurement or game screenshot"
   }
 }
