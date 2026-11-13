@@ -1,0 +1,30 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.87);
+    background: radial-gradient(circle at 50% 30%, #2a1b3d 0%, #120a20 60%, #080512 100%);
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#game-container {
+    width: 1024px;
+    height: 640px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55), 0 0 0 2px rgba(255, 150, 70, 0.25);
+}
+
+#game-container canvas {
+    display: block;
+}

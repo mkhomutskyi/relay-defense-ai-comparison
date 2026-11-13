@@ -1,0 +1,47 @@
+{
+  "classification": "Illustrative energy scenarios, not wall-meter measurements",
+  "rateUSDperKWh": 0.1816,
+  "ratePeriod": "August2026 U.S. residential average, preliminary; EIA release23October2026",
+  "rateSource": "https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a",
+  "assumptions": "30WAMD tools during all runs. For local Inkling only, add an illustrative250Wdesktop =280Wcombined.250Wis an assumed whole-PC load, not GPU telemetry or nameplate power.",
+  "excluded": "Setup, downloads, independent review, idle periods, unscored calibration and cloud-provider electricity.",
+  "rows": [
+    {
+      "id": "p2-deepseek",
+      "activeSeconds": 1303.173,
+      "assumedWholeSystemWatts": 30,
+      "modeledKWh": 0.010859774999999999,
+      "modeledCostUSD": 0.0019721351399999997
+    },
+    {
+      "id": "p2-inkling2",
+      "activeSeconds": 1742.191,
+      "assumedWholeSystemWatts": 30,
+      "modeledKWh": 0.014518258333333334,
+      "modeledCostUSD": 0.0026365157133333337
+    },
+    {
+      "id": "p2-qwen",
+      "activeSeconds": 1892.403,
+      "assumedWholeSystemWatts": 30,
+      "modeledKWh": 0.015770025,
+      "modeledCostUSD": 0.0028638365400000003
+    },
+    {
+      "id": "p2-inkling-local",
+      "activeSeconds": 3417.7329999999997,
+      "assumedWholeSystemWatts": 280,
+      "modeledKWh": 0.26582367777777777,
+      "modeledCostUSD": 0.048273579884444445
+    },
+    {
+      "id": "p2-glm",
+      "activeSeconds": 797.549,
+      "assumedWholeSystemWatts": 30,
+      "modeledKWh": 0.006646241666666667,
+      "modeledCostUSD": 0.0012069574866666669
+    }
+  ],
+  "totalKWh": 0.3136179777777778,
+  "totalCostUSD": 0.05695302476444444
+}

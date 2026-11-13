@@ -1,6 +1,6 @@
-# Relay Defense: six AI-built games
+# Relay Defense: two rounds of AI-built games
 
-Six saved browser tower-defense games, generated through different model/runtime/agent workflows. This repository contains their source, static browser bundles and comparison page. Playing requires no language model, API key or home-server access.
+Part 1 contains six saved browser tower-defense games, generated through different model/runtime/agent workflows. This repository contains their source, static browser bundles and comparison page. Playing requires no language model, API key or home-server access.
 
 **[Play all six games](https://mkhomutskyi.github.io/relay-defense-ai-comparison/)** · [Source and build notes](https://github.com/mkhomutskyi/relay-defense-ai-comparison)
 
@@ -10,7 +10,16 @@ The repository and GitHub Pages site are public. Production reader voting is not
 
 The GIF previews below are continuous eight-second real-time gameplay excerpts. The comparison page also includes six compact videos. The Graphify video joins setup and combat with the waiting interval removed; the cut is disclosed beside it. Clips are silent and do not establish client-device frame rate or perceived audio quality.
 
-## My final ranking
+
+## Part 2 — five fresh attempts
+
+**[Play or inspect Part 2](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/)** · [Article draft](docs/part-2/ARTICLE_DRAFT.md) · [Measurements](docs/part-2/MEASUREMENTS.md)
+
+The new round adds Qwen Cloud Flash, DeepSeek V4.1 Flash through Ollama, cloud Inkling 2, original local Inkling UD-IQ1_S on RTX 5090, and GLM-5.3-Flash through Ollama. Four produced playable games, with defects recorded; original local Inkling failed. GLM's provider bill increased by $0.22324 across its initial and visual-feedback phases, totaling 13m18s of active agent time. Personal stars for the new round remain pending. Browser-local ratings/export are available; no shared averages are invented.
+
+These are fresh artifacts with the same creative brief and clean starter. Their reasoning and feedback effort still differ, and earlier timings had a calibration overlap. Sources, relative-base bundles, actual eight-second GIF/video excerpts, original identities and known failures are preserved. The original six below remain unchanged.
+
+## Part 1 — my final ranking
 
 | Place | Development workflow | Creation time / estimate | DeepSeek API usage |
 |---|---|---:|---:|

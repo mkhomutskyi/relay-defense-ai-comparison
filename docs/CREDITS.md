@@ -16,3 +16,9 @@ Original publishers and model identities are preserved:
 This repository distributes game artifacts and comparison infrastructure, not model weights. Model-provider terms do not replace third-party software/asset licenses. Source attribution does not imply provider endorsement.
 
 Screenshots and gameplay recordings are genuine observations. The cover is an AI-assisted hardware illustration composed locally in ComfyUI from locally generated Z-Image Turbo lettering/supporting sketches and an AI X1 Pro hardware illustration. The workflow diagram is an editorial SVG illustration. These are illustrations, not hardware photos, gameplay screenshots or benchmark measurements. Preserve captions and provenance when reusing them.
+
+## Part 2
+
+The five new game source trees retain their Phaser/template licenses. Canonical cloud IDs and the original local Inkling publisher/filename are listed in [Part2 methods](part-2/METHODS.md). No model weights or private sessions are distributed. The selected models authored the games through Pi; setup, packaging, independent checks and editorial assets used outside assistance.
+
+The new cover is an AI-assisted editorial illustration made after testing, not an actual game frame or hardware photo. The workflow diagram is a native editorial SVG. All five Part2 GIFs/videos are real continuous eight-second recordings without time-hook acceleration or resource grants; the native Inkling clip is explicitly a failure capture. [Media hashes](../results/part-2-media.json).

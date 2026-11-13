@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #0f0f0f;
+}
+
+#app {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#game-container canvas { display: block; box-shadow: 0 0 60px rgba(255, 209, 102, 0.12); }

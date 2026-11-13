@@ -71,7 +71,43 @@ def main():
         if abs(end - start - 8) > 0.001:
             findings.append({"file": item["file"], "rule": "gif-duration-manifest"})
 
-    print(json.dumps({"filesChecked": count, "frozenSourceHashes": len(source), "gameplayGifs": len(gifs), "findings": findings}))
+    # Part 2 is an independent gallery; keep the original six frozen artifacts intact.
+    part2 = json.loads((ROOT / "site/part-2/games.json").read_text(encoding="utf-8"))
+    part2_sources = json.loads((ROOT / "results/part-2-source-hashes.json").read_text(encoding="utf-8"))
+    part2_builds = json.loads((ROOT / "results/part-2-builds.json").read_text(encoding="utf-8"))["files"]
+    part2_media = json.loads((ROOT / "results/part-2-media.json").read_text(encoding="utf-8"))["gifs"]
+    if len(part2) != 5 or len({g["id"] for g in part2}) != 5:
+        findings.append({"file": "site/part-2/games.json", "rule": "part2-catalog"})
+    for rel, values in part2_sources.items():
+        p = ROOT / rel
+        if not rel.startswith("games/part-2/") or not p.is_file() or digest(p) not in {values["capturedSha256"], values["sha256"]}:
+            findings.append({"file": rel, "rule": "part2-frozen-source"})
+    for rel, expected in part2_builds.items():
+        if not (ROOT / rel).is_file() or digest(ROOT / rel) != expected:
+            findings.append({"file": rel, "rule": "part2-static-bundle"})
+    media_by_id = {m["id"]: m for m in part2_media}
+    for g in part2:
+        if not (ROOT / "site/part-2/games" / g["id"] / "index.html").is_file() or g["id"] not in media_by_id:
+            findings.append({"file": g["id"], "rule": "part2-missing-artifact"})
+        if g["ownerRating"] is not None and (not isinstance(g["ownerRating"], int) or not 1 <= g["ownerRating"] <= 5):
+            findings.append({"file": g["id"], "rule": "part2-owner-rating"})
+    for item in part2_media:
+        for rel, expected in [(item["file"], item["sha256"]), (item["source"], item["sourceSha256"])]:
+            if not (ROOT / rel).is_file() or digest(ROOT / rel) != expected:
+                findings.append({"file": rel, "rule": "part2-media-hash"})
+        if item["excerptSeconds"] != [0, 8] or not item["normalTime"] or item["resourceGrants"] or item["timeHookUsed"]:
+            findings.append({"file": item["file"], "rule": "part2-media-scope"})
+
+    illustrations = json.loads((ROOT / "results/part-2-illustrations.json").read_text(encoding="utf-8"))
+    for item in illustrations.values():
+        pairs = [(item["file"], item["sha256"])]
+        if "source" in item:
+            pairs.append((item["source"], item["sourceSha256"]))
+        for rel, expected in pairs:
+            if not (ROOT / rel).is_file() or digest(ROOT / rel) != expected:
+                findings.append({"file": rel, "rule": "part2-illustration-hash"})
+
+    print(json.dumps({"filesChecked": count, "frozenSourceHashes": len(source), "gameplayGifs": len(gifs), "part2Games": len(part2), "part2FrozenSources": len(part2_sources), "part2Captures": len(part2_media), "findings": findings}))
     return bool(findings)
 
 

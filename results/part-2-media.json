@@ -1,0 +1,104 @@
+{
+  "gifs": [
+    {
+      "id": "p2-deepseek",
+      "file": "site/part-2/media/p2-deepseek.gif",
+      "sha256": "f8f1e9bca3b9f47f5b2d45e535bb4643e207f4d02609799eb72bf79e32d3dcbe",
+      "source": "site/part-2/media/p2-deepseek.mp4",
+      "sourceSha256": "9ddffa17e595a831252ad9835143b86c70106d24bf7492c09d1f6bea21bc8fe6",
+      "rawRecordingSha256": "7b30bdbe4e25a4b63809e05021306038893749d4105e7172ff68b362d1358ad8",
+      "rawExcerptSeconds": [
+        5,
+        13
+      ],
+      "excerptSeconds": [
+        0,
+        8
+      ],
+      "normalTime": true,
+      "resourceGrants": false,
+      "timeHookUsed": false,
+      "kind": "gameplay capture"
+    },
+    {
+      "id": "p2-inkling2",
+      "file": "site/part-2/media/p2-inkling2.gif",
+      "sha256": "c2478a5649e098605f5314a16d9a8bf9a7f6fe0f2905ced66fdcc2f4556eb4fe",
+      "source": "site/part-2/media/p2-inkling2.mp4",
+      "sourceSha256": "12734b22f592bc13713c4a5db59045c59092badac5a3c55316947949e1546e30",
+      "rawRecordingSha256": "8c49770b456bec3e0165bd0e53073750085d0ec5547ded46b9c6f5a70efe732b",
+      "rawExcerptSeconds": [
+        5,
+        13
+      ],
+      "excerptSeconds": [
+        0,
+        8
+      ],
+      "normalTime": true,
+      "resourceGrants": false,
+      "timeHookUsed": false,
+      "kind": "gameplay capture"
+    },
+    {
+      "id": "p2-qwen",
+      "file": "site/part-2/media/p2-qwen.gif",
+      "sha256": "bb3005dd4d824370de547dd6c2a495d2d61e5f9a97c813784a606300ef81c8cd",
+      "source": "site/part-2/media/p2-qwen.mp4",
+      "sourceSha256": "4f363e06b8d87e5461dba003566e1b482a6a5c65eef06c47871154302317b585",
+      "rawRecordingSha256": "ca6112d5068fa2c20596ca4895fbb278b26afa864947bb7938123304e8172626",
+      "rawExcerptSeconds": [
+        5,
+        13
+      ],
+      "excerptSeconds": [
+        0,
+        8
+      ],
+      "normalTime": true,
+      "resourceGrants": false,
+      "timeHookUsed": false,
+      "kind": "gameplay capture"
+    },
+    {
+      "id": "p2-inkling-local",
+      "file": "site/part-2/media/p2-inkling-local.gif",
+      "sha256": "4f9d1e19f5ceb9e14d7c9c7d9376c5248cea990bb402c520130117a1e5522569",
+      "source": "site/part-2/media/p2-inkling-local.mp4",
+      "sourceSha256": "95766a78b41b69491fb21b691ad5e3e25dd433704a0a989be8bd1045532f414b",
+      "rawRecordingSha256": "180972c1f086b6b702d4a014afd9a30fa09fc1e1e2d94f79030616147930c2a0",
+      "rawExcerptSeconds": [
+        0,
+        8
+      ],
+      "excerptSeconds": [
+        0,
+        8
+      ],
+      "normalTime": true,
+      "resourceGrants": false,
+      "timeHookUsed": false,
+      "kind": "failure capture"
+    },
+    {
+      "id": "p2-glm",
+      "file": "site/part-2/media/p2-glm.gif",
+      "sha256": "02286c8cd8c472b63b9bac8bf7d63c419a27b5dad02951abf61559f46aa668e8",
+      "source": "site/part-2/media/p2-glm.mp4",
+      "sourceSha256": "b3f6d8f175afe95c365e3bd33fa1bcb083b34e2481047aab928d202ac15c8de6",
+      "rawRecordingSha256": "1221ed714257b634c23cc256b482eb2d2ab2d033a63893cebf5d8d067d1c207e",
+      "rawExcerptSeconds": [
+        5,
+        13
+      ],
+      "excerptSeconds": [
+        0,
+        8
+      ],
+      "normalTime": true,
+      "resourceGrants": false,
+      "timeHookUsed": false,
+      "kind": "gameplay capture"
+    }
+  ]
+}

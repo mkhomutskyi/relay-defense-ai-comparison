@@ -1,0 +1,417 @@
+{
+  "games/part-2/p2-deepseek/index.html": {
+    "capturedSha256": "c013fbef5369134790e0abdbcc287f05cb892a03e43854a92e2142f96508f3ec",
+    "sha256": "c013fbef5369134790e0abdbcc287f05cb892a03e43854a92e2142f96508f3ec",
+    "bytes": 654
+  },
+  "games/part-2/p2-deepseek/LICENSE": {
+    "capturedSha256": "2280b0fc1261427dd55f810ddffcfd7409428318250040ba880b3afe91c25c57",
+    "sha256": "2280b0fc1261427dd55f810ddffcfd7409428318250040ba880b3afe91c25c57",
+    "bytes": 1074
+  },
+  "games/part-2/p2-deepseek/package-lock.json": {
+    "capturedSha256": "2826c0662c52ce97da153633df5cbef6e6d81777db97563c2cb2641bcf3c8d86",
+    "sha256": "2826c0662c52ce97da153633df5cbef6e6d81777db97563c2cb2641bcf3c8d86",
+    "bytes": 38364
+  },
+  "games/part-2/p2-deepseek/package.json": {
+    "capturedSha256": "8ba29875a36cad71fe180073e99c0f38727f9c5ce08f1b5201906d4e54fc4e56",
+    "sha256": "8ba29875a36cad71fe180073e99c0f38727f9c5ce08f1b5201906d4e54fc4e56",
+    "bytes": 293
+  },
+  "games/part-2/p2-deepseek/tsconfig.json": {
+    "capturedSha256": "92ed554099eae269d86bb720ee7b14b5c748955a82542e7630d3df1ec4054fb0",
+    "sha256": "92ed554099eae269d86bb720ee7b14b5c748955a82542e7630d3df1ec4054fb0",
+    "bytes": 748
+  },
+  "games/part-2/p2-deepseek/public/favicon.png": {
+    "capturedSha256": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "sha256": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "bytes": 354
+  },
+  "games/part-2/p2-deepseek/public/style.css": {
+    "capturedSha256": "27547ffc04bb16e2e3a90e11637da87c27e4637292acdab129b6edc94977e47b",
+    "sha256": "27547ffc04bb16e2e3a90e11637da87c27e4637292acdab129b6edc94977e47b",
+    "bytes": 737
+  },
+  "games/part-2/p2-deepseek/src/main.ts": {
+    "capturedSha256": "29697d502a6e2685270cb6a33e3cb5d4877cb5bfe26965b7227c00304e470333",
+    "sha256": "29697d502a6e2685270cb6a33e3cb5d4877cb5bfe26965b7227c00304e470333",
+    "bytes": 130
+  },
+  "games/part-2/p2-deepseek/src/vite-env.d.ts": {
+    "capturedSha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "bytes": 38
+  },
+  "games/part-2/p2-deepseek/src/game/art.ts": {
+    "capturedSha256": "d9c522f24dcea75e3cf0206e0e3a25d3e6a9dba14bb6de5f70de15a0c96d5f43",
+    "sha256": "d9c522f24dcea75e3cf0206e0e3a25d3e6a9dba14bb6de5f70de15a0c96d5f43",
+    "bytes": 27552
+  },
+  "games/part-2/p2-deepseek/src/game/audio.ts": {
+    "capturedSha256": "da06fe4eca5ee6625dfbbdbb6d792d78575b16deac3c8fd1b1d6e030fe86a00d",
+    "sha256": "da06fe4eca5ee6625dfbbdbb6d792d78575b16deac3c8fd1b1d6e030fe86a00d",
+    "bytes": 12010
+  },
+  "games/part-2/p2-deepseek/src/game/main.ts": {
+    "capturedSha256": "f4e7e9c56c9899c2e4ef1e65ede367be5bcd00ff68b9144de57ad347ef9abdca",
+    "sha256": "f4e7e9c56c9899c2e4ef1e65ede367be5bcd00ff68b9144de57ad347ef9abdca",
+    "bytes": 757
+  },
+  "games/part-2/p2-deepseek/src/game/model.ts": {
+    "capturedSha256": "1aa5160a84cc3647b7df60cde5d1ce2316bef1158154386c809ebe5960868dd6",
+    "sha256": "1aa5160a84cc3647b7df60cde5d1ce2316bef1158154386c809ebe5960868dd6",
+    "bytes": 19040
+  },
+  "games/part-2/p2-deepseek/src/game/path.ts": {
+    "capturedSha256": "1d54ca52e9ed0ff851b93eceffec808332dd0560fa893227ae5cc920e7c4cc79",
+    "sha256": "1d54ca52e9ed0ff851b93eceffec808332dd0560fa893227ae5cc920e7c4cc79",
+    "bytes": 4036
+  },
+  "games/part-2/p2-deepseek/src/game/ui.ts": {
+    "capturedSha256": "68dc97b335bd9cf04d2e822f7ba59861e431d1a981894ac2f7fb952b867c8d6d",
+    "sha256": "68dc97b335bd9cf04d2e822f7ba59861e431d1a981894ac2f7fb952b867c8d6d",
+    "bytes": 4644
+  },
+  "games/part-2/p2-deepseek/src/game/scenes/Game.ts": {
+    "capturedSha256": "cf6e75419d582f9e1f95c27c531757e8043ca770ee10b4f8cd883f2a82cfc35a",
+    "sha256": "cf6e75419d582f9e1f95c27c531757e8043ca770ee10b4f8cd883f2a82cfc35a",
+    "bytes": 57609
+  },
+  "games/part-2/p2-deepseek/src/game/scenes/MainMenu.ts": {
+    "capturedSha256": "dcaefff71b8b59fd145534259c9c45b7560f07a856164293081a92e9e1be4543",
+    "sha256": "dcaefff71b8b59fd145534259c9c45b7560f07a856164293081a92e9e1be4543",
+    "bytes": 10108
+  },
+  "games/part-2/p2-inkling2/index.html": {
+    "capturedSha256": "5a8b30f1ae83bf769bda4072a10f251eb4a6ef771f7cd86593bdac8ac480418a",
+    "sha256": "5a8b30f1ae83bf769bda4072a10f251eb4a6ef771f7cd86593bdac8ac480418a",
+    "bytes": 443
+  },
+  "games/part-2/p2-inkling2/LICENSE": {
+    "capturedSha256": "2280b0fc1261427dd55f810ddffcfd7409428318250040ba880b3afe91c25c57",
+    "sha256": "2280b0fc1261427dd55f810ddffcfd7409428318250040ba880b3afe91c25c57",
+    "bytes": 1074
+  },
+  "games/part-2/p2-inkling2/package-lock.json": {
+    "capturedSha256": "2826c0662c52ce97da153633df5cbef6e6d81777db97563c2cb2641bcf3c8d86",
+    "sha256": "2826c0662c52ce97da153633df5cbef6e6d81777db97563c2cb2641bcf3c8d86",
+    "bytes": 38364
+  },
+  "games/part-2/p2-inkling2/package.json": {
+    "capturedSha256": "8ba29875a36cad71fe180073e99c0f38727f9c5ce08f1b5201906d4e54fc4e56",
+    "sha256": "8ba29875a36cad71fe180073e99c0f38727f9c5ce08f1b5201906d4e54fc4e56",
+    "bytes": 293
+  },
+  "games/part-2/p2-inkling2/tsconfig.json": {
+    "capturedSha256": "92ed554099eae269d86bb720ee7b14b5c748955a82542e7630d3df1ec4054fb0",
+    "sha256": "92ed554099eae269d86bb720ee7b14b5c748955a82542e7630d3df1ec4054fb0",
+    "bytes": 748
+  },
+  "games/part-2/p2-inkling2/public/favicon.png": {
+    "capturedSha256": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "sha256": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "bytes": 354
+  },
+  "games/part-2/p2-inkling2/public/style.css": {
+    "capturedSha256": "3a92bc99ac2ba94d916b2414adfef2c737a3e392c3381a5135b77807b4e1f88d",
+    "sha256": "3a92bc99ac2ba94d916b2414adfef2c737a3e392c3381a5135b77807b4e1f88d",
+    "bytes": 341
+  },
+  "games/part-2/p2-inkling2/src/main.ts": {
+    "capturedSha256": "29697d502a6e2685270cb6a33e3cb5d4877cb5bfe26965b7227c00304e470333",
+    "sha256": "29697d502a6e2685270cb6a33e3cb5d4877cb5bfe26965b7227c00304e470333",
+    "bytes": 130
+  },
+  "games/part-2/p2-inkling2/src/vite-env.d.ts": {
+    "capturedSha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "bytes": 38
+  },
+  "games/part-2/p2-inkling2/src/game/audio.ts": {
+    "capturedSha256": "6f85becd2bc0e52c61523a0e0c2f48251fbb875c173a87ec6279a3389986c52c",
+    "sha256": "6f85becd2bc0e52c61523a0e0c2f48251fbb875c173a87ec6279a3389986c52c",
+    "bytes": 6857
+  },
+  "games/part-2/p2-inkling2/src/game/main.ts": {
+    "capturedSha256": "15f844de56e0afa3e9f385796f01dc3c9237392b80f0de7e86b6a53b8ce58c48",
+    "sha256": "15f844de56e0afa3e9f385796f01dc3c9237392b80f0de7e86b6a53b8ce58c48",
+    "bytes": 516
+  },
+  "games/part-2/p2-inkling2/src/game/scenes/Boot.ts": {
+    "capturedSha256": "a2ccf316f5a83f09dd3c25277ed18fbcbb21721dab4b4fe20b55d5c1f4dd9311",
+    "sha256": "a2ccf316f5a83f09dd3c25277ed18fbcbb21721dab4b4fe20b55d5c1f4dd9311",
+    "bytes": 162
+  },
+  "games/part-2/p2-inkling2/src/game/scenes/Game.ts": {
+    "capturedSha256": "4366ef501ea7a92bf7becf5a673a6bae1e6f8bff14b5891afdef7df7e7f58ef5",
+    "sha256": "4366ef501ea7a92bf7becf5a673a6bae1e6f8bff14b5891afdef7df7e7f58ef5",
+    "bytes": 42602
+  },
+  "games/part-2/p2-inkling2/src/game/scenes/MainMenu.ts": {
+    "capturedSha256": "0942fa5a2c6cd8186b2ec3a6b2980a2de192b336f2694976343d96ebce9bca29",
+    "sha256": "0942fa5a2c6cd8186b2ec3a6b2980a2de192b336f2694976343d96ebce9bca29",
+    "bytes": 3005
+  },
+  "games/part-2/p2-qwen/index.html": {
+    "capturedSha256": "5a8b30f1ae83bf769bda4072a10f251eb4a6ef771f7cd86593bdac8ac480418a",
+    "sha256": "5a8b30f1ae83bf769bda4072a10f251eb4a6ef771f7cd86593bdac8ac480418a",
+    "bytes": 443
+  },
+  "games/part-2/p2-qwen/LICENSE": {
+    "capturedSha256": "2280b0fc1261427dd55f810ddffcfd7409428318250040ba880b3afe91c25c57",
+    "sha256": "2280b0fc1261427dd55f810ddffcfd7409428318250040ba880b3afe91c25c57",
+    "bytes": 1074
+  },
+  "games/part-2/p2-qwen/package-lock.json": {
+    "capturedSha256": "2826c0662c52ce97da153633df5cbef6e6d81777db97563c2cb2641bcf3c8d86",
+    "sha256": "2826c0662c52ce97da153633df5cbef6e6d81777db97563c2cb2641bcf3c8d86",
+    "bytes": 38364
+  },
+  "games/part-2/p2-qwen/package.json": {
+    "capturedSha256": "8ba29875a36cad71fe180073e99c0f38727f9c5ce08f1b5201906d4e54fc4e56",
+    "sha256": "8ba29875a36cad71fe180073e99c0f38727f9c5ce08f1b5201906d4e54fc4e56",
+    "bytes": 293
+  },
+  "games/part-2/p2-qwen/tsconfig.json": {
+    "capturedSha256": "92ed554099eae269d86bb720ee7b14b5c748955a82542e7630d3df1ec4054fb0",
+    "sha256": "92ed554099eae269d86bb720ee7b14b5c748955a82542e7630d3df1ec4054fb0",
+    "bytes": 748
+  },
+  "games/part-2/p2-qwen/public/favicon.png": {
+    "capturedSha256": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "sha256": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "bytes": 354
+  },
+  "games/part-2/p2-qwen/public/style.css": {
+    "capturedSha256": "2294aeb6563ed08d7cba3b56c5f913979e354d0f82454439ae1fd98182714cca",
+    "sha256": "2294aeb6563ed08d7cba3b56c5f913979e354d0f82454439ae1fd98182714cca",
+    "bytes": 637
+  },
+  "games/part-2/p2-qwen/src/main.ts": {
+    "capturedSha256": "29697d502a6e2685270cb6a33e3cb5d4877cb5bfe26965b7227c00304e470333",
+    "sha256": "29697d502a6e2685270cb6a33e3cb5d4877cb5bfe26965b7227c00304e470333",
+    "bytes": 130
+  },
+  "games/part-2/p2-qwen/src/vite-env.d.ts": {
+    "capturedSha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "bytes": 38
+  },
+  "games/part-2/p2-qwen/src/game/audio.ts": {
+    "capturedSha256": "614030998e427f242684be4547b785a48588b264f7848ea42a252b558408d39e",
+    "sha256": "614030998e427f242684be4547b785a48588b264f7848ea42a252b558408d39e",
+    "bytes": 6683
+  },
+  "games/part-2/p2-qwen/src/game/data.ts": {
+    "capturedSha256": "9e1f0f52e4bf48dd81210faf2d74b777bbb019fcd951aa5128ead89a573d6d8a",
+    "sha256": "9e1f0f52e4bf48dd81210faf2d74b777bbb019fcd951aa5128ead89a573d6d8a",
+    "bytes": 5600
+  },
+  "games/part-2/p2-qwen/src/game/main.ts": {
+    "capturedSha256": "e8cd44cf68f9999668b55b100dd83d344fca846220d0b69c3ec93e10742d8f6f",
+    "sha256": "e8cd44cf68f9999668b55b100dd83d344fca846220d0b69c3ec93e10742d8f6f",
+    "bytes": 734
+  },
+  "games/part-2/p2-qwen/src/game/sim.ts": {
+    "capturedSha256": "5ca6afed4424ba48430a918fb4664e771e06909ce8b5b5584cfbe709a86f761f",
+    "sha256": "5ca6afed4424ba48430a918fb4664e771e06909ce8b5b5584cfbe709a86f761f",
+    "bytes": 16089
+  },
+  "games/part-2/p2-qwen/src/game/textures.ts": {
+    "capturedSha256": "7366bf0c67c1630080009cc60639bd2b8c8c4276b38790bf489829001f956e5d",
+    "sha256": "7366bf0c67c1630080009cc60639bd2b8c8c4276b38790bf489829001f956e5d",
+    "bytes": 8999
+  },
+  "games/part-2/p2-qwen/src/game/scenes/Boot.ts": {
+    "capturedSha256": "16bd2de31817ab726f1cdf7ece707ac343792dd95cb01a4282c3d47d62c9a51b",
+    "sha256": "16bd2de31817ab726f1cdf7ece707ac343792dd95cb01a4282c3d47d62c9a51b",
+    "bytes": 464
+  },
+  "games/part-2/p2-qwen/src/game/scenes/GameScene.ts": {
+    "capturedSha256": "8058060d202395b1a22d784ddc3d40376329f776920d746a699a19e514d98a8b",
+    "sha256": "8058060d202395b1a22d784ddc3d40376329f776920d746a699a19e514d98a8b",
+    "bytes": 19950
+  },
+  "games/part-2/p2-qwen/src/game/scenes/MainMenu.ts": {
+    "capturedSha256": "407fa728809c309b7c4844c0787c3060168ee65a315b204248cfb5c3bf45b28c",
+    "sha256": "407fa728809c309b7c4844c0787c3060168ee65a315b204248cfb5c3bf45b28c",
+    "bytes": 3522
+  },
+  "games/part-2/p2-qwen/public/assets/bg.png": {
+    "capturedSha256": "868de612a0040e2a25e14f8b983d1c9fc96f0ac8cc6ed93dba9a74366b6c82e1",
+    "sha256": "868de612a0040e2a25e14f8b983d1c9fc96f0ac8cc6ed93dba9a74366b6c82e1",
+    "bytes": 302554
+  },
+  "games/part-2/p2-qwen/public/assets/logo.png": {
+    "capturedSha256": "cc15da4ad8d0aacd84e8f7a1990b0ff7ecaf39646f4f6b9c296a183aad2e9076",
+    "sha256": "cc15da4ad8d0aacd84e8f7a1990b0ff7ecaf39646f4f6b9c296a183aad2e9076",
+    "bytes": 24692
+  },
+  "games/part-2/p2-inkling-local/index.html": {
+    "capturedSha256": "d55180eab97315857da18e183d8eef349d44ded1e737e0b175b6e6bad0bc84b2",
+    "sha256": "d55180eab97315857da18e183d8eef349d44ded1e737e0b175b6e6bad0bc84b2",
+    "bytes": 447
+  },
+  "games/part-2/p2-inkling-local/LICENSE": {
+    "capturedSha256": "2280b0fc1261427dd55f810ddffcfd7409428318250040ba880b3afe91c25c57",
+    "sha256": "2280b0fc1261427dd55f810ddffcfd7409428318250040ba880b3afe91c25c57",
+    "bytes": 1074
+  },
+  "games/part-2/p2-inkling-local/package-lock.json": {
+    "capturedSha256": "2826c0662c52ce97da153633df5cbef6e6d81777db97563c2cb2641bcf3c8d86",
+    "sha256": "2826c0662c52ce97da153633df5cbef6e6d81777db97563c2cb2641bcf3c8d86",
+    "bytes": 38364
+  },
+  "games/part-2/p2-inkling-local/package.json": {
+    "capturedSha256": "8ba29875a36cad71fe180073e99c0f38727f9c5ce08f1b5201906d4e54fc4e56",
+    "sha256": "8ba29875a36cad71fe180073e99c0f38727f9c5ce08f1b5201906d4e54fc4e56",
+    "bytes": 293
+  },
+  "games/part-2/p2-inkling-local/tsconfig.json": {
+    "capturedSha256": "92ed554099eae269d86bb720ee7b14b5c748955a82542e7630d3df1ec4054fb0",
+    "sha256": "92ed554099eae269d86bb720ee7b14b5c748955a82542e7630d3df1ec4054fb0",
+    "bytes": 748
+  },
+  "games/part-2/p2-inkling-local/public/favicon.png": {
+    "capturedSha256": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "sha256": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "bytes": 354
+  },
+  "games/part-2/p2-inkling-local/public/style.css": {
+    "capturedSha256": "081974d9b7043df7e32d6737ad4df1ef10e2cb5e38e0dfe4a636f5d491d850b6",
+    "sha256": "081974d9b7043df7e32d6737ad4df1ef10e2cb5e38e0dfe4a636f5d491d850b6",
+    "bytes": 250
+  },
+  "games/part-2/p2-inkling-local/src/main.ts": {
+    "capturedSha256": "29697d502a6e2685270cb6a33e3cb5d4877cb5bfe26965b7227c00304e470333",
+    "sha256": "29697d502a6e2685270cb6a33e3cb5d4877cb5bfe26965b7227c00304e470333",
+    "bytes": 130
+  },
+  "games/part-2/p2-inkling-local/src/vite-env.d.ts": {
+    "capturedSha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "bytes": 38
+  },
+  "games/part-2/p2-inkling-local/src/game/main.ts": {
+    "capturedSha256": "1d10295e7133d8a4fa18738344aadd111488cc66ff560334c469a7a9d740e248",
+    "sha256": "1d10295e7133d8a4fa18738344aadd111488cc66ff560334c469a7a9d740e248",
+    "bytes": 822
+  },
+  "games/part-2/p2-inkling-local/src/game/scenes/Battle.ts": {
+    "capturedSha256": "a5691b79d4d404e2f369f28ac657994278c23503c351877f2ba261adda508eaa",
+    "sha256": "a5691b79d4d404e2f369f28ac657994278c23503c351877f2ba261adda508eaa",
+    "bytes": 4167
+  },
+  "games/part-2/p2-inkling-local/src/game/scenes/Boot.ts": {
+    "capturedSha256": "b8d1e1a932214d5d1aeea5f1667445866b1e924ddbb2bae3e8786d9874f8ee83",
+    "sha256": "b8d1e1a932214d5d1aeea5f1667445866b1e924ddbb2bae3e8786d9874f8ee83",
+    "bytes": 516
+  },
+  "games/part-2/p2-inkling-local/src/game/scenes/Game.ts": {
+    "capturedSha256": "0c737e03ee5619ff444f4a07af354f09ec1310c4195a6cb6382c345716d63fb3",
+    "sha256": "0c737e03ee5619ff444f4a07af354f09ec1310c4195a6cb6382c345716d63fb3",
+    "bytes": 1811
+  },
+  "games/part-2/p2-inkling-local/src/game/scenes/GameOver.ts": {
+    "capturedSha256": "79d2544a34b2e0509e4f6c6f8b22de23ccd06acce9fc03c54e06aa62d5b71bce",
+    "sha256": "79d2544a34b2e0509e4f6c6f8b22de23ccd06acce9fc03c54e06aa62d5b71bce",
+    "bytes": 863
+  },
+  "games/part-2/p2-inkling-local/src/game/scenes/MainMenu.ts": {
+    "capturedSha256": "5fb6571408598a6c11a6187011d08836cee8da1600b3544b7fc18f65aa27df3e",
+    "sha256": "5fb6571408598a6c11a6187011d08836cee8da1600b3544b7fc18f65aa27df3e",
+    "bytes": 724
+  },
+  "games/part-2/p2-inkling-local/src/game/scenes/Preloader.ts": {
+    "capturedSha256": "99c8d5f5e763fccd4dff7ad81c4e9da6c96f6d0620a982dabe26c184b1f07efc",
+    "sha256": "99c8d5f5e763fccd4dff7ad81c4e9da6c96f6d0620a982dabe26c184b1f07efc",
+    "bytes": 1482
+  },
+  "games/part-2/p2-inkling-local/public/assets/bg.png": {
+    "capturedSha256": "868de612a0040e2a25e14f8b983d1c9fc96f0ac8cc6ed93dba9a74366b6c82e1",
+    "sha256": "868de612a0040e2a25e14f8b983d1c9fc96f0ac8cc6ed93dba9a74366b6c82e1",
+    "bytes": 302554
+  },
+  "games/part-2/p2-inkling-local/public/assets/logo.png": {
+    "capturedSha256": "cc15da4ad8d0aacd84e8f7a1990b0ff7ecaf39646f4f6b9c296a183aad2e9076",
+    "sha256": "cc15da4ad8d0aacd84e8f7a1990b0ff7ecaf39646f4f6b9c296a183aad2e9076",
+    "bytes": 24692
+  },
+  "games/part-2/p2-glm/index.html": {
+    "capturedSha256": "5a8b30f1ae83bf769bda4072a10f251eb4a6ef771f7cd86593bdac8ac480418a",
+    "sha256": "5a8b30f1ae83bf769bda4072a10f251eb4a6ef771f7cd86593bdac8ac480418a",
+    "bytes": 443
+  },
+  "games/part-2/p2-glm/LICENSE": {
+    "capturedSha256": "2280b0fc1261427dd55f810ddffcfd7409428318250040ba880b3afe91c25c57",
+    "sha256": "2280b0fc1261427dd55f810ddffcfd7409428318250040ba880b3afe91c25c57",
+    "bytes": 1074
+  },
+  "games/part-2/p2-glm/package-lock.json": {
+    "capturedSha256": "2826c0662c52ce97da153633df5cbef6e6d81777db97563c2cb2641bcf3c8d86",
+    "sha256": "2826c0662c52ce97da153633df5cbef6e6d81777db97563c2cb2641bcf3c8d86",
+    "bytes": 38364
+  },
+  "games/part-2/p2-glm/package.json": {
+    "capturedSha256": "8ba29875a36cad71fe180073e99c0f38727f9c5ce08f1b5201906d4e54fc4e56",
+    "sha256": "8ba29875a36cad71fe180073e99c0f38727f9c5ce08f1b5201906d4e54fc4e56",
+    "bytes": 293
+  },
+  "games/part-2/p2-glm/tsconfig.json": {
+    "capturedSha256": "92ed554099eae269d86bb720ee7b14b5c748955a82542e7630d3df1ec4054fb0",
+    "sha256": "92ed554099eae269d86bb720ee7b14b5c748955a82542e7630d3df1ec4054fb0",
+    "bytes": 748
+  },
+  "games/part-2/p2-glm/public/favicon.png": {
+    "capturedSha256": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "sha256": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "bytes": 354
+  },
+  "games/part-2/p2-glm/public/style.css": {
+    "capturedSha256": "081974d9b7043df7e32d6737ad4df1ef10e2cb5e38e0dfe4a636f5d491d850b6",
+    "sha256": "081974d9b7043df7e32d6737ad4df1ef10e2cb5e38e0dfe4a636f5d491d850b6",
+    "bytes": 250
+  },
+  "games/part-2/p2-glm/src/main.ts": {
+    "capturedSha256": "8749a2fc9689d38ff548a1b51c597c8048f8bbc426eee9759b0bacf84f29dec1",
+    "sha256": "8749a2fc9689d38ff548a1b51c597c8048f8bbc426eee9759b0bacf84f29dec1",
+    "bytes": 129
+  },
+  "games/part-2/p2-glm/src/vite-env.d.ts": {
+    "capturedSha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "bytes": 38
+  },
+  "games/part-2/p2-glm/src/game/audio.ts": {
+    "capturedSha256": "cf8dc2c8a5b1f70ac19b3253448e46a113861c39f36a13d25873c1baaad3ebc4",
+    "sha256": "cf8dc2c8a5b1f70ac19b3253448e46a113861c39f36a13d25873c1baaad3ebc4",
+    "bytes": 7146
+  },
+  "games/part-2/p2-glm/src/game/globals.d.ts": {
+    "capturedSha256": "3581f5d79bbe3e4505378806e5c9979650506470253a76eda754b4473fbd84e2",
+    "sha256": "3581f5d79bbe3e4505378806e5c9979650506470253a76eda754b4473fbd84e2",
+    "bytes": 187
+  },
+  "games/part-2/p2-glm/src/game/main.ts": {
+    "capturedSha256": "d8eec799198a6e076ac609115db44105c23a0a1fb7a1490433e7b5f6120c674e",
+    "sha256": "d8eec799198a6e076ac609115db44105c23a0a1fb7a1490433e7b5f6120c674e",
+    "bytes": 577
+  },
+  "games/part-2/p2-glm/src/game/scenes/Game.ts": {
+    "capturedSha256": "8f6f1ee8280bce16a14ae3dac1b3208460577164fca6660dd97e088d91f03d1c",
+    "sha256": "8f6f1ee8280bce16a14ae3dac1b3208460577164fca6660dd97e088d91f03d1c",
+    "bytes": 42321
+  },
+  "games/part-2/p2-glm/src/game/scenes/GameOver.ts": {
+    "capturedSha256": "3c089478ba6a867a1a3ea5e5a3ffbbe3020f803a3bf5ddc39fe0f0cf5d880b68",
+    "sha256": "3c089478ba6a867a1a3ea5e5a3ffbbe3020f803a3bf5ddc39fe0f0cf5d880b68",
+    "bytes": 1306
+  },
+  "games/part-2/p2-glm/src/game/scenes/MainMenu.ts": {
+    "capturedSha256": "9f01b1276a086b311f70f07aa5e3809ca621d090d8b9a4e01f6d7a444d0c4a9c",
+    "sha256": "9f01b1276a086b311f70f07aa5e3809ca621d090d8b9a4e01f6d7a444d0c4a9c",
+    "bytes": 2454
+  }
+}

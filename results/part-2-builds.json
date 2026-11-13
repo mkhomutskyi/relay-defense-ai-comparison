@@ -1,0 +1,31 @@
+{
+  "all_typechecks_passed": true,
+  "relative_base": "./",
+  "source_unchanged": true,
+  "files": {
+    "site/part-2/games/p2-deepseek/favicon.png": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "site/part-2/games/p2-deepseek/index.html": "11e1d62f902bd23e0069b2de9a866565069f31ae343f7cfc1de67eccd1158390",
+    "site/part-2/games/p2-deepseek/style.css": "27547ffc04bb16e2e3a90e11637da87c27e4637292acdab129b6edc94977e47b",
+    "site/part-2/games/p2-glm/favicon.png": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "site/part-2/games/p2-glm/index.html": "208cbe6daa5aaabdd78fbd968f96ab98b34374d276763f419f94285620f8b2e7",
+    "site/part-2/games/p2-glm/style.css": "081974d9b7043df7e32d6737ad4df1ef10e2cb5e38e0dfe4a636f5d491d850b6",
+    "site/part-2/games/p2-inkling-local/favicon.png": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "site/part-2/games/p2-inkling-local/index.html": "9e596cf25237e5e009ee131d5da36b1f5375b9237f088c2e7bbf55c02b818d2b",
+    "site/part-2/games/p2-inkling-local/style.css": "081974d9b7043df7e32d6737ad4df1ef10e2cb5e38e0dfe4a636f5d491d850b6",
+    "site/part-2/games/p2-inkling2/favicon.png": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "site/part-2/games/p2-inkling2/index.html": "3e3a6e82f980c38caa3a5e751ae166aef7cb2864bff997a9ef668e6781c2e5f3",
+    "site/part-2/games/p2-inkling2/style.css": "3a92bc99ac2ba94d916b2414adfef2c737a3e392c3381a5135b77807b4e1f88d",
+    "site/part-2/games/p2-qwen/favicon.png": "1fa4c9d8f65746bbcc2df6ff66c5620f691250c6e4360e4a43b7393a9f8dabaa",
+    "site/part-2/games/p2-qwen/index.html": "530216bcd6b02e684583bd0318eac6cec81a3baffc9323555897e5c5496039ff",
+    "site/part-2/games/p2-qwen/style.css": "2294aeb6563ed08d7cba3b56c5f913979e354d0f82454439ae1fd98182714cca",
+    "site/part-2/games/p2-qwen/assets/bg.png": "868de612a0040e2a25e14f8b983d1c9fc96f0ac8cc6ed93dba9a74366b6c82e1",
+    "site/part-2/games/p2-qwen/assets/index-DqE-9yYJ.js": "a18be1e6da9cde959da48bfbebd0645851ca71b382052ebacb34f56e2a9ef113",
+    "site/part-2/games/p2-qwen/assets/logo.png": "cc15da4ad8d0aacd84e8f7a1990b0ff7ecaf39646f4f6b9c296a183aad2e9076",
+    "site/part-2/games/p2-inkling2/assets/index-DFeF5FdK.js": "e81685276c0d0e73df82a8bfd51af6f16584a244b4ff31e481a95e2a45caea90",
+    "site/part-2/games/p2-inkling-local/assets/bg.png": "868de612a0040e2a25e14f8b983d1c9fc96f0ac8cc6ed93dba9a74366b6c82e1",
+    "site/part-2/games/p2-inkling-local/assets/index-C1AfAegJ.js": "b49dab24805b6919c5923a8aa4dd6cc0b1985420a96db1c25f298ef0393a7118",
+    "site/part-2/games/p2-inkling-local/assets/logo.png": "cc15da4ad8d0aacd84e8f7a1990b0ff7ecaf39646f4f6b9c296a183aad2e9076",
+    "site/part-2/games/p2-glm/assets/index-Dd6_zzez.js": "b63f6bee6cf85828c44ca45d0139668a97c6bc0e68b5165dd817503463425e15",
+    "site/part-2/games/p2-deepseek/assets/index-USQk-N4T.js": "9a248610db3383646177eb0ec50cbe03fcb062075049fd2e3ed324de8acc61d5"
+  }
+}
