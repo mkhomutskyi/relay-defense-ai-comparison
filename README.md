@@ -13,7 +13,7 @@ The GIF previews below are continuous eight-second real-time gameplay excerpts. 
 
 ## Part 2 — six fresh attempts
 
-**[Play or inspect Part 2](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/)** · [Article draft](docs/part-2/ARTICLE_DRAFT.md) · [Measurements](docs/part-2/MEASUREMENTS.md)
+**[Play or inspect Part 2](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/)** · [Article draft](docs/part-2/ARTICLE_DRAFT.md) · [Measurements](docs/part-2/MEASUREMENTS.md) · [Gameplay and challenge](docs/part-2/GAMEPLAY_NOTES.md)
 
 The new round adds Qwen Cloud Flash, DeepSeek V4.1 Flash through Ollama, cloud Inkling 2, original local Inkling UD-IQ1_S on RTX 5090, GLM-5.3-Flash and MiniMax M3.1 Flash through Ollama. Five produced playable games, with defects recorded; original local Inkling failed. GLM's provider bill increased by $0.22324 across its initial and visual-feedback phases, totaling 13m18s of active agent time. Personal stars for the new round remain pending. Browser-local ratings/export are available; no shared averages are invented.
 

@@ -1,34 +1,30 @@
-# My Tower-Defense Experiment, Part 2: Six Models and a 22-Cent GLM Game
+# My Tower-Defense Experiment, Part 2: Six Models, Five Playable Games
 
-*Qwen, DeepSeek, two Inklings, GLM and MiniMax through Pi—with the games, costs and failures saved for you to try.*
+*Qwen, DeepSeek, two Inklings, GLM and MiniMax through Pi. What did the time and API spending actually buy?*
 
-![Editorial sketch of six models, a tower-defense monitor, an AMD tools host, an RTX 5090 and a cloud API](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/media/cover-part2.png)
+![Editorial sketch of six model deployments, a tower-defense monitor, an AMD tools host, an RTX 5090 and cloud inference](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/media/cover-part2.png)
 
-*AI-assisted editorial illustration, created after the tests. This is not a gameplay screenshot.*
+*AI-assisted editorial illustration. Actual gameplay captures appear below.*
 
-In [Part 1](https://medium.com/p/99decaca5454), I compared six tower-defense games built with local models and DeepSeek's API. My favorite used Pi with Graphify and cost an estimated 18.47 cents in API usage.
+In [Part 1](https://medium.com/p/99decaca5454), I used my roughly $1,043 AMD box to compare six tower-defense games. My favorite came from DeepSeek through [Pi](https://pi.dev/) with Graphify, at an estimated 18.47 cents in API usage.
 
-This time, six deployments received the same six-wave brief and clean Phaser starter. Five produced playable games, with defects recorded. One compiled successfully and opened a blank screen.
+For Part 2, I gave six model deployments the same six-wave brief and clean Phaser starter. Five produced playable games, with defects. One compiled successfully and opened a blank screen.
 
 The compiler was pleased. The browser was less impressed.
 
-You can [play or inspect all six Part 2 attempts](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/). No model, API key or access to my server is needed. The original six remain available separately.
+[Play or inspect all six attempts here](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/). No model, API key or home-server connection is needed. The [same public repository](https://github.com/mkhomutskyi/relay-defense-ai-comparison) holds the source and measurements.
 
-## The same tools, different inference
+## The AMD box still did the development
 
-My MINISFORUM AI X1 Pro hosted [Pi](https://pi.dev/), the coding agent, plus files, builds and browser tests. Its refurbished barebone and 64 GB of used eBay RAM cost me **$1,042.63**; I reused the NVMe drive.
+My MINISFORUM AI X1 Pro has a Ryzen AI 9 HX 370 and 64 GB of RAM. The refurbished barebone cost $522.63 including tax; I got lucky with used eBay RAM for $520. I reused the NVMe drive.
 
-Qwen used Qwen Cloud. DeepSeek, Inkling 2, GLM and MiniMax used Ollama Cloud. Original Inkling Small ran through a native CUDA server on my existing RTX 5090 desktop. That desktop is additional hardware, outside the AMD box's purchase price.
+Pi, files, builds and browser tests ran on the AMD server. Qwen used Qwen Cloud US. DeepSeek, Inkling 2, GLM and MiniMax used Ollama Cloud. Original Inkling Small used a native CUDA server on my RTX 5090 desktop—additional hardware outside the AMD box's price.
 
-The selected model wrote the TypeScript game, procedural graphics and Web Audio through Pi. Setup, prompts, packaging and independent checks used outside assistance, excluded from the model-cost table. No Graphify in this round.
+The selected models authored the TypeScript games, procedural graphics and Web Audio through Pi. Setup, prompts, packaging and independent checks used outside assistance, excluded from the model-cost table. Graphify was not used in this round.
 
-I kept Pi 1.5.0, Phaser 4.2.1, TypeScript 7.0.2 and Vite 8.3.6 fixed, with a 64K client context allowance and 16,384-token response ceiling. GLM and MiniMax used high reasoning; DeepSeek and cloud Inkling used medium. Qwen and local Inkling had a 2,048-token thinking cap. Those controls are different.
+![Workflow showing cloud inference and local RTX 5090 inference feeding Pi and development tools on the AMD machine](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/media/workflow-part2.png)
 
-![Diagram showing five cloud models and local RTX 5090 inference feeding Pi on the AMD machine, producing saved browser games](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/media/workflow-part2.png)
-
-*Editorial diagram. Inference changes; the development environment stays on the AMD server.*
-
-The [shared brief and method](https://github.com/mkhomutskyi/relay-defense-ai-comparison/blob/main/docs/part-2/METHODS.md) are on GitHub.
+*Editorial diagram: the development workspace stayed on AMD; inference changed.*
 
 ## What the clocks and bills say
 
@@ -41,88 +37,92 @@ The [shared brief and method](https://github.com/mkhomutskyi/relay-defense-ai-co
 | Qwen3.8-Flash · Qwen Cloud US | 31m32s, two phases | ~$0.7909 uncached upper estimate |
 | Original Inkling Small UD-IQ1_S · RTX 5090 | 56m58s, four phases | No API fee; electricity additional |
 
-Active time includes tool waits and repair phases. Setup, model loading, gaps, independent review and human effort are excluded. Qwen received one recovery prompt, GLM one visual-feedback prompt, MiniMax one factual repair and local Inkling three continuations.
+These are recorded build costs, not current price quotes. Active time includes tool waits and repairs; setup, loading, gaps, independent review and human effort are excluded.
 
-A calibration job also continued when it should have stopped and overlapped the earlier four runs. Its extra costs are separate. These clocks describe the recorded workflows; I would not turn them into a precise model-speed ratio. The [measurement tables](https://github.com/mkhomutskyi/relay-defense-ai-comparison/blob/main/docs/part-2/MEASUREMENTS.md) keep the scope beside the numbers.
+I kept Pi 1.5.0, Phaser 4.2.1, TypeScript 7.0.2 and Vite 8.3.6 fixed. Reasoning settings differed. Qwen received one recovery prompt, GLM one visual-feedback prompt, MiniMax one factual repair, and local Inkling three continuations. An unintended calibration job overlapped earlier runs. This was a workflow comparison, not a precise model-speed ranking. The [methods](https://github.com/mkhomutskyi/relay-defense-ai-comparison/blob/main/docs/part-2/METHODS.md) and [measurement tables](https://github.com/mkhomutskyi/relay-defense-ai-comparison/blob/main/docs/part-2/MEASUREMENTS.md) explain those differences.
 
 ## GLM: a working game for 22 cents
 
-[GLM-5.3-Flash](https://ollama.com/library/glm-5.3-flash) completed its first pass in **10m36s**, adding **$0.17463** to the bill. It found and corrected a restart bug during its own tests.
+GLM-5.3-Flash's first pass took 10m36s and added $0.17463 to the bill. It corrected a restart bug during its own tests.
 
-My independent replay passed all six waves, paid upgrades, spending rejection, pause, speed, mute, defeat and both restart routes. Screenshots still showed nearly invisible shop buttons and crowded HUD instructions.
+My independent replay passed all six waves, paid upgrades, spending rejection, pause, speed, mute, defeat and restart checks. Screenshots exposed nearly invisible shop buttons and crowded instructions. One visual-feedback prompt added 2m42s and $0.04861; GLM corrected them.
 
-One factual visual request added **2m42s** and **$0.04861**. GLM corrected the UI. The spending guard ended that phase before a final reply, but the saved changes passed the build and affected-control checks. Total: **$0.22324**.
+The spending guard ended that phase before its final reply. The saved changes passed the affected-control checks. Total: $0.22324. Simple geometric sprites, but a functioning game.
 
-![Actual GLM cloud game, showing moving enemies, targeting and firing](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/media/p2-glm.gif)
+![Actual GLM cloud game showing targeting, moving enemies and firing](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/media/p2-glm.gif)
 
 [Play GLM-5.3-Flash · Ollama Cloud · Pi](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/?game=p2-glm)
 
-Simple graphics, working controls and a canvas that fits a narrow screen.
+## DeepSeek: the most coherent implementation
 
-## DeepSeek: more illustrated detail
+DeepSeek's saved prototype had a readable desert map, more illustrated detail, distinct single-target and area weapons, working upgrades and sale refunds. Its independent campaign ended with 82 kills, full integrity and no leaks.
 
-DeepSeek's independent campaign finished with **82 kills, full 20/20 integrity and no leaks**. Upgrades, sale refunds, spending limits and main controls passed. The desert, solar panels, enemies and relay have more illustrated detail than GLM's geometric sprites.
+That clear alone says little about difficulty. The restricted-strategy checks below were more revealing.
 
 ![Actual DeepSeek cloud game during normal-time combat](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/media/p2-deepseek.gif)
 
 [Play DeepSeek V4.1 Flash 1017 · Ollama Cloud · Pi](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/?game=p2-deepseek)
 
-The **$0.6315** figure is a cache-aware estimate from logged tokens, not a direct DeepSeek API quote.
+The $0.6315 figure is a cache-aware estimate from logged tokens through Ollama, not a direct DeepSeek invoice.
 
-## Inkling 2: playable, with time spent waiting
+## Inkling 2: more strategic pressure
 
-Cloud Inkling 2 passed a six-wave campaign with ten lives remaining. Paid upgrades and restart after either ending worked. Two of its own test scripts timed out; that waiting remains in the **29m02s** total.
+Cloud Inkling 2 completed the campaign with ten lives remaining. Paid upgrades and restart after either ending worked. Its homing lancer and fixed-location mortar blasts offered different ways to handle moving targets.
+
+Two of its own test scripts timed out; those waits remain in the 29m02s total. The fixed-width canvas is cropped on phones, so use a desktop for this build.
 
 ![Actual Inkling 2 cloud game during normal-time combat](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/media/p2-inkling2.gif)
 
 [Play Inkling 2 Small · Ollama Cloud · Pi](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/?game=p2-inkling2)
 
-Its fixed-width canvas is cropped on a phone. Desktop recommended.
-
 ## MiniMax: the repair mattered
 
-MiniMax's first pass compiled but threw `ReferenceError: Phaser is not defined` during play. Several controls failed. One factual repair produced a final game that passed **20/20 independent functional checks**. Its six-wave victory ended with **123 kills, full integrity and no leaks**.
+MiniMax's first pass compiled but threw `ReferenceError: Phaser is not defined`. Several controls failed. One factual repair produced a game that passed 20/20 independent functional checks, including a six-wave victory with full integrity and no leaks.
 
 ![Actual MiniMax cloud game during normal-time combat](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/media/p2-minimax.gif)
 
 [Play MiniMax M3.1 Flash · Ollama Cloud · Pi](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/?game=p2-minimax)
 
-Total active time was **30 minutes**. The first phase hit its spending guard; the repair ended at its deadline. Neither ended with a normal final reply. The phone canvas fits, but its text becomes tiny.
+Its two phases totaled 30 minutes and ended at guards or deadlines. The observed bill increased $0.31356 for 207 requests. One additional aborted request had no final usage, so I retained a $0.1671168 reservation. That hold is not a confirmed charge; 31 cents is not a fully reconciled price.
 
-The observed bill rose **$0.31356** for 207 requests. One more admitted request was aborted without final usage. I retained a **$0.1671168 cost reservation**, not a confirmed charge, so 31 cents is not a fully reconciled final price.
+## Qwen: a campaign clear with broken controls
 
-## Qwen: recovery helped, controls still slipped through
-
-Qwen's first pass left the starter unchanged. One recovery prompt produced a game that completed the independent campaign. Ordinary upgrade and sell clicks still failed. Its phone layout is cropped.
+Qwen's first pass left the starter unchanged. A recovery prompt produced a game that completed the campaign. Ordinary upgrade and sell clicks still failed, and the phone layout was cropped.
 
 ![Actual Qwen Cloud Flash game during normal-time combat](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/media/p2-qwen.gif)
 
 [Play Qwen3.8-Flash · Qwen Cloud · Pi](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/?game=p2-qwen)
 
-The **$0.7909** upper estimate ignores cache discounts. I kept the defects rather than repairing the game outside the tested model.
+The $0.7909 upper estimate ignores cache discounts. I left the implementation's defects intact rather than repairing them outside the tested model.
 
 ## Original local Inkling: the failure stays
 
-My local [Unsloth Inkling Small GGUF](https://huggingface.co/unsloth/Inkling-Small-GGUF) used the extreme **UD-IQ1_S** quantization, GPU/host-memory splitting and text-only input. Across four phases it left incomplete code, tool-format errors and a mismatched scene entry point. The final build passed; starting it led to a blank screen.
+My local [Unsloth Inkling Small GGUF](https://huggingface.co/unsloth/Inkling-Small-GGUF) used extreme UD-IQ1_S quantization, GPU/host-memory splitting and text-only input. Four phases left incomplete code, tool-format errors and a mismatched scene entry point. The final build passed; starting it reached a blank screen.
 
-![Actual local Inkling failure capture: the starter menu transitions to a blank screen](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/media/p2-inkling-local.gif)
+![Actual local Inkling failure: its menu transitions to a blank screen](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/media/p2-inkling-local.gif)
 
 [Inspect the failed local Inkling artifact](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/?game=p2-inkling-local)
 
-This older, heavily quantized deployment differs from cloud Inkling 2. Its failure combines the checkpoint, serving stack, tool handling and missing image input. It is not a clean local/cloud pair.
+This older, heavily quantized deployment is not a clean match for cloud Inkling 2. Checkpoint, serving stack, tool handling and missing image input all differ. Its failure cannot settle whether local models can build games.
 
-I saved it anyway. Keeping only the good results would make this hobby considerably tidier.
+## Winning the test is not the same as making a challenging game
 
-## The API route changes the price
+I also checked fixed-army strategies using legal purchases and upgrades. DeepSeek survived one no-upgrade route with just 1/20 integrity; a weaker placement lost. Inkling 2's two-lancer route lost on wave three; upgrading those towers reached wave six but still lost. GLM's fixed two-turret route lost without upgrades and won with them.
 
-During the DeepSeek run, Ollama was at peak prices while [DeepSeek's own API](https://api-docs.deepseek.com/quick_start/pricing/) was off-peak. Applying direct rates to the **same recorded tokens and cache hits** gives approximately **$0.316**, instead of $0.632. That is a calculation, not a direct-provider replay; cache behavior could differ.
+MiniMax was more forgiving: three level-one towers won with 12/20 integrity and 2,712 credits left. That was a deliberately restricted army, not an optimized strategy. The games have different economies, so equal tower counts are not an equal-budget benchmark.
 
-Electricity applies to cloud workflows too. At an assumed **30 W** for the AMD tools host, GLM's active time adds about **0.12 cents** at the [EIA's August 2026 U.S. residential average of 18.16 cents/kWh](https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a). The [energy table](https://github.com/mkhomutskyi/relay-defense-ai-comparison/blob/main/docs/part-2/ELECTRICITY.md) models about **6 cents across these six attempts**, including a separate RTX desktop assumption. This excludes preparation and cloud-provider electricity. No wall-meter measurement was made.
+These probes made DeepSeek and Inkling 2 the stronger candidates for further gameplay review. They do not prove fair balance or replay value. Several games also allow a boss to leak if enough base health remains. A victory screen needs context. [Gameplay notes and limitations](https://github.com/mkhomutskyi/relay-defense-ai-comparison/blob/main/docs/part-2/GAMEPLAY_NOTES.md).
+
+## Small bills still need the right accounting
+
+During the recorded DeepSeek run, Ollama's peak rates were twice the direct provider's off-peak rates. Applying direct rates to the same tokens and cache hits gives about $0.316 instead of $0.632. This is a calculation, not a direct-provider replay; cache behavior could differ. Future DeepSeek tests will use its direct API.
+
+Cloud workflows use local electricity too. At an assumed 30 W for the AMD tools host, GLM's active time adds about 0.12 cents using 18.16 cents/kWh, the EIA rate recorded with the study. The [electricity scenarios](https://github.com/mkhomutskyi/relay-defense-ai-comparison/blob/main/docs/part-2/ELECTRICITY.md) total about six cents across these attempts, including a separate RTX desktop assumption. Preparation and cloud-provider electricity are excluded. Nothing was measured at the wall.
 
 ## Try them and leave your stars
 
-My personal ratings are still pending. The [gallery](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/) offers one-to-five-star fields for visuals, gameplay and sound. Its GIFs are silent eight-second recordings. Leave sound unrated until you listen.
+My personal ratings are pending. The [gallery](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/) has one-to-five-star fields for visuals, gameplay and sound. The GIFs are silent eight-second recordings; listen before rating sound.
 
-Ratings stay in your browser and can be exported. Share scores, questions and suggestions in the comments. The Part 1 ranking stays separate.
+Ratings stay in your browser and can be exported. Share your scores in the comments. Which game rewards careful placement? Which would you replay? I would also welcome questions and suggestions for the next experiment.
 
-Part 3 will cover **proprietary models through existing subscriptions**. That will be a separate workflow comparison, with the client and included usage recorded. Those builds are not part of today's results.
+A later part can cover proprietary models through subscriptions. Those results belong to a separate comparison.
