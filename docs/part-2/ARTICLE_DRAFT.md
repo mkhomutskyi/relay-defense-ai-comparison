@@ -20,7 +20,7 @@ I used my AMD box from Part 1 to run Pi, build the games and test them in a brow
 
 Qwen ran through Qwen Cloud, and DeepSeek, Inkling 2, GLM and MiniMax through Ollama Cloud. Original Inkling Small ran on my RTX 5090 using Unsloth’s llama.cpp server.
 
-The selected models authored the TypeScript games, procedural graphics and Web Audio through Pi. Setup, prompts, packaging and independent checks used outside assistance, excluded from the model-cost table.
+The selected models authored the TypeScript games, procedural graphics and Web Audio through Pi.
 
 ![Workflow showing cloud inference and local RTX 5090 inference feeding Pi and development tools on the AMD machine](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/media/workflow-part2.png)
 
@@ -49,7 +49,7 @@ GLM-5.3-Flash's first pass took 10m36s and added $0.17463 to the bill. It correc
 
 The browser check cleared all six waves and checked upgrades, unaffordable purchases, pause, speed, mute, defeat and restart. Screenshots exposed nearly invisible shop buttons and crowded instructions. One visual-feedback prompt added 2m42s and $0.04861; GLM corrected them.
 
-The spending guard ended that phase before its final reply. The saved changes passed the affected-control checks.
+The budget limit stopped the run before GLM’s final reply. The revised controls worked in the browser checks.
 
 ![Actual GLM cloud game showing targeting, moving enemies and firing](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/media/p2-glm.gif)
 
