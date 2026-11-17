@@ -18,7 +18,9 @@ In [Part 1](https://medium.com/p/99decaca5454), my favorite came from DeepSeek t
 
 My MINISFORUM AI X1 Pro has a Ryzen AI 9 HX 370 and 64 GB of RAM. The refurbished barebone cost $522.63 including tax; I got lucky with used eBay RAM for $520. I reused the NVMe drive.
 
-Pi, files, builds and browser tests ran on the AMD server. Qwen used Qwen Cloud US. DeepSeek, Inkling 2, GLM and MiniMax used Ollama Cloud. Original Inkling Small used standalone `llama-server.exe` with CUDA on my RTX 5090 desktop, outside the AMD box’s price. It did not run through LM Studio.
+Pi, files, builds and browser tests ran on the AMD server. Qwen used Qwen Cloud US. DeepSeek, Inkling 2, GLM and MiniMax used Ollama Cloud.
+
+For original Inkling Small, I ran an updated Unsloth llama.cpp server with CUDA on my RTX 5090 PC. Pi and the development tools stayed on the AMD box. The model ran locally using GPU and system memory, with no API charge. That desktop is outside the AMD box’s price.
 
 The selected models authored the TypeScript games, procedural graphics and Web Audio through Pi. Setup, prompts, packaging and independent checks used outside assistance, excluded from the model-cost table.
 
@@ -117,7 +119,7 @@ The $0.7909 upper estimate ignores cache discounts. I preserved the delivered de
 
 ## Original local Inkling: the failure stays
 
-My local [Unsloth Inkling Small GGUF](https://huggingface.co/unsloth/Inkling-Small-GGUF) used extreme UD-IQ1_S quantization, GPU/host-memory splitting and text-only input. Four phases left incomplete code and tool-format errors. The menu called a scene the game never registered, producing the blank screen. This local run had no API fee; hardware and electricity still cost money.
+My local [Unsloth Inkling Small GGUF](https://huggingface.co/unsloth/Inkling-Small-GGUF) used extreme UD-IQ1_S quantization, GPU/host-memory splitting and text-only input. Four phases left incomplete code and tool-format errors. The menu called a scene the game never registered, producing the blank screen.
 
 ![Actual local Inkling failure: its menu transitions to a blank screen](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/media/p2-inkling-local.gif)
 
