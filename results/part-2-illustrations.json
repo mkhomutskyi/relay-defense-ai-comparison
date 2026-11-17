@@ -7,9 +7,10 @@
   },
   "workflow": {
     "file": "site/part-2/media/workflow-part2.png",
-    "sha256": "f43db6f4af250f936b6f1a825a0c775fb1e4b630f4dda0514d1362bc4244dd58",
+    "sha256": "38e1bbe7030fb8c2c98b423ccf7aca78acd760b09b1e8618c87b8a303e5c571a",
     "source": "site/part-2/media/workflow-part2.svg",
-    "sourceSha256": "864ab85fd54605d13e1d409f0932168c540527db849007f9ab8eb1b62eeae7e2",
-    "kind": "Native editorial SVG, rendered on AMD; not a measurement or game screenshot"
+    "sourceSha256": "c191800992a244866e6dd39329547d370076b693e9ce7978dff2cdaf7af7e52b",
+    "kind": "Native editorial SVG; original rendered on AMD, colour-matched PNG rendered on owner PC on 17 November 2026; not a measurement or game screenshot",
+    "palette": "Earlier article palette: blue #0951cc, yellow #f5e835, black #17191c, white background"
   }
 }

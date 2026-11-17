@@ -87,7 +87,7 @@ Two of its own test scripts timed out; those waits remain in the total. The fixe
 
 [Play Inkling 2 Small · Ollama Cloud · Pi](https://mkhomutskyi.github.io/relay-defense-ai-comparison/part-2/?game=p2-inkling2)
 
-I used purchased Ollama Cloud credits for Inkling 2, with no included allowance. Its 73 requests cost an estimated 31 cents, calculated from logged tokens. That is not a separate provider invoice.
+Inkling 2 ran through Ollama Cloud. Its 73 requests cost an estimated 31 cents, calculated from logged tokens. That is not a separate provider invoice.
 
 ## MiniMax: the repair mattered
 
