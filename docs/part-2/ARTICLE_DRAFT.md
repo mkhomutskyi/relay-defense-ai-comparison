@@ -14,13 +14,11 @@ The compiler was pleased. The browser was less impressed.
 
 In [Part 1](https://medium.com/p/99decaca5454), my favorite came from DeepSeek through [Pi](https://pi.dev/), the coding agent, with Graphify. For Part 2, I kept the AMD machine, gave each model a clean Phaser starter and left Graphify out.
 
-## The AMD box still did the development
+## How I ran Pi
 
-My MINISFORUM AI X1 Pro has a Ryzen AI 9 HX 370 and 64 GB of RAM. The refurbished barebone cost $522.63 including tax; I got lucky with used eBay RAM for $520. I reused the NVMe drive.
+I used my AMD box from Part 1 to run Pi, build the games and test them in a browser.
 
-Pi, files, builds and browser tests ran on the AMD server. Qwen used Qwen Cloud US. DeepSeek, Inkling 2, GLM and MiniMax used Ollama Cloud.
-
-For original Inkling Small, I ran an updated Unsloth llama.cpp server with CUDA on my RTX 5090 PC. Pi and the development tools stayed on the AMD box. The model ran locally using GPU and system memory, with no API charge. That desktop is outside the AMD box’s price.
+Qwen ran through Qwen Cloud, and DeepSeek, Inkling 2, GLM and MiniMax through Ollama Cloud. Original Inkling Small ran on my RTX 5090 using Unsloth’s llama.cpp server.
 
 The selected models authored the TypeScript games, procedural graphics and Web Audio through Pi. Setup, prompts, packaging and independent checks used outside assistance, excluded from the model-cost table.
 
