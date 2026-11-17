@@ -33,7 +33,9 @@ The [public prompt](PROMPT.md) replaces only the environment-specific host label
 
 The local API returned a host-specific absolute path, which is kept private. The table identifies its original publisher, checkpoint and filename without inventing an API alias. No model weights or wrappers are distributed here. Public game IDs label artifacts, not renamed models.
 
-Local Inkling used native CUDA 13, a 64K context, 15 GPU layers, 12 generation/prompt threads, batch/ubatch 64, F16 KV, flash attention and mmap. A 36 GiB resident working-set cap applied only to the owned test process. This was an older extreme quantization with text-only input; it is not an identical local/cloud pair with Inkling 2.
+Local Inkling launched standalone `llama-server.exe` directly, outside the LM Studio GUI, and used native CUDA 13, a 64K context, 15 GPU layers, 12 generation/prompt threads, batch/ubatch 64, F16 KV, flash attention and mmap. A 36 GiB resident working-set cap applied only to the owned test process. This was an older extreme quantization with text-only input; it is not an identical local/cloud pair with Inkling 2.
+
+The original local Inkling run incurred no API fee. Inkling 2 used purchased Ollama Cloud credits; the recorded account had zero included allowance. Its 73 requests have a cache-aware token-price estimate of $0.31379426, not an isolated provider invoice. The account balance snapshots cover multiple jobs.
 
 ## Feedback and validation
 
@@ -52,6 +54,8 @@ A calibration stop failed, so an unscored Qwen attempt continued to an hour and 
 Durations are observed active agent phases including tool waits. They exclude setup, loading, outside coordination, independent QA and gaps between phases. Different reasoning, feedback, model versions and quantization also limit comparisons. This is not an isolated speed benchmark or a statistically repeated quality leaderboard.
 
 ## Build and play
+
+To replay the committed static bundles, run `python scripts/serve.py` from a clone and open `http://localhost:8080/part-2/`. No rebuild or inference is required.
 
 The committed static bundles run without a model, API key or home server. Each new source folder includes the existing matching dependency lockfile from the same pinned toolchain. No dependency version was changed. Rebuild from the repository root after installing dependencies in the new game folders:
 
